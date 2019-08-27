@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="tvm3-styles.css">
+    <link rel="stylesheet" href="tvm4-styles.css">
 
-    <title>TVM - Part 3: Cash Flows</title>
+    <title>TVM - Part 4: Annuities</title>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h1 class="primaryTitle">Time Value of Money</h1>
-                        <h2 class="secondaryTitle">Part 3: Cash Flows</h2>
+                        <h2 class="secondaryTitle">Part 4: Annuities</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -42,7 +42,7 @@
             <div id="slide2" class="slide">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
-                        <h2 class="primaryTitle">TVM: Cash Flows</h2>
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
                         <h3 class="secondaryTitle">Learning Objectives</h3>
                     </div>
                 </div>
@@ -51,33 +51,26 @@
                         <!-- slide 2, initial state defaults to intro button -->
                         <div id="intro3" class="content">
                             <h3>Introduction</h3>
-                            <p>In Part 1 of the Time Value of Money tutorial, you learned about the general format of the TVM equation. In Part 2, you learned about Compound Interest. Here in part 3, we'll be adding an addtional dimension: Cash Flows!</p>
-                            <p>By adding cash flows, you'll be able to use TVM for common real-world applications, like:
-                                <ul>
-                                    <li>How much will I have actually paid for this house at the end of a 30-year mortgage?</li>
-                                    <li>Should I take the dealer's cash offer or a lower APR for my new car?</li>
-                                    <li>How much will my retirement account be worth in 20 years if I deposit $20 per month?</li>
-                                </ul>
+                            <p>In Part 1 of the Time Value of Money tutorial, you learned about the general format of the TVM equation. In Part 2, you learned about Compound Interest. In part 3, we added cash flows. Here in part 4 of the TVM tutorials, we'll learn about the Present Value of Annuities (PVA) to answer the question:<br>
+                                <span class="math">How much should I pay today for an annuity?</span>
                             </p>
                         </div>
-                        <div id="learningObj3" class="content">
+                        <div id="learningObj4" class="content">
                             <h3>Learning Objectives</h3>
                             <p>By the end of this tutorial, you will:
                                 <ul>
-                                    <li>Define a perpetuity</li>
-                                    <li>Discern between annuity and annuity due</li>
-                                    <li>Memorize the general format of the TVM equation with payments</li>
-                                    <li>Identify the variables in a word problem so you can use them in the TVM equation</li>
-                                    <li>Solve the equation for any unknown variable</li>
+                                    <li>Given a word problem, calculate PVA using the TVM equation, the PVA equation, a PVA Factor table, and a financial calculation</li>
+                                    <li>Calculate PVA with compounding using the four methods listed above</li>
+                                    <li>Compare annuities with different periods, interest rates, compounding periods, and cash flows to determine the best option</li>
                                 </ul>
                             </p>
                         </div>
-                        <div id="requirements3" class="content">
+                        <div id="requirements4" class="content">
                             <h3>Requirements</h3>
                             <p>To complete this tutorial, you will need:
                                 <ul>
                                     <li>Mastery of the basic TVM equation with compounding</li>
-                                    <li>Basic algebra skills</li>
+                                    <li>Basic algebra skills, including the Order of Operations (PEMDAS) and FOIL</li>
                                     <li>Scratch paper and pencil or pen</li>
                                     <li>A calculator <span class="note">(optional: a financial calculator)</span></li>
                                 </ul>
@@ -106,7 +99,7 @@
             <div id="slide3" class="slide">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
-                        <h2 class="primaryTitle">TVM: Cash Flows</h2>
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
                         <h3 class="secondaryTitle">Review</h3>
                     </div>
                 </div>
@@ -115,20 +108,17 @@
                         <div class="content">
                             <h5>The basic form of the Time Value of Money (TVM) equation is:</h5>
                             <p>
-                                <div class="math math-big">
-                                    <span class="FV">FV</span> = <span class="PV">PV</span>(1 + <span class="int">i</span>)<span class="yrs"><sup>n</sup></span>
+                                <div class="text-center">
+                                    <img src="./images/tvm_sample_equation.png" class="img-fluid img-math" alt="">
                                 </div>
-                            </p>
-                            <p>Where:<br>
                                 <div class="math">
                                     <span class="FV">FV</span> = Future Value<br>
                                     <span class="PV">PV</span> = Present Value<br>
                                     <span class="int">i</span> = interest rate (%)<br>
                                     <span class="yrs">n</span> = number of years
-
                                 </div>
                             </p>
-
+                            <p>In the process, we also learned how to manipulate the basic TVM equation, so that we would not have to memorize one equation each to solve for the four variables.</p>
                         </div>
                     </div>
                 </div>
@@ -151,7 +141,7 @@
             <div id="slide4" class="slide">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
-                        <h2 class="primaryTitle">TVM: Cash Flows</h2>
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
                         <h3 class="secondaryTitle">Review</h3>
                     </div>
                 </div>
@@ -171,15 +161,9 @@
                                     <span class="int">i</span> = interest rate (%)<br>
                                     <span class="yrs">n</span> = number of years<br>
                                     <span class="cmpd">m</span> = number of compound periods per year
-
                                 </div>
                             </p>
                             <p>Compound interest means that interest payments are made periodically throughout the year, and the interest paid has the opportunity to earn interest.</p>
-                            <p>When compounding, interest payments are made more than once a year. However, the amount of interest paid each period is the nominal rate (i) divided by the number of compound periods (m). For example, if an account pays 10% interest compounded semi-annually, the time line looks like this:
-                                <div class="text-center">
-                                    <img src="./images/tvm2_semi-annual_interest_timeline_part2.png" class="img-fluid img-math" alt="">
-                                </div>
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -202,20 +186,37 @@
             <div id="slide5" class="slide">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
-                        <h2 class="primaryTitle">TVM: Cash Flows</h2>
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
                         <h3 class="secondaryTitle">Introduction</h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 col-sm-12">
                         <div class="content">
-                            <h3>Cash Flows</h3>
-                            <p>Now we'll modify the equation even further, this time to introduce cash flows. </p>
-                            <p>Cash flows are defined as:
-                                <div class="math">Regularly scheduled, equal payments over the term of the investment or loan.
-                                </div>
-                                <p>By adding cash flows, the TVM equation really starts to become useful in your everyday life. Cash flows are prevalent in personal and business finance. As a lender, you may receive cash flows in the form of dividends or coupon payments. As a borrower, you may be required to make payments on your car or mortgage.</p>
+                            <h5>Then we introduced the idea of cash flows in the form of perpetuities and annuities</h5> 
+                            <p>We also introduced two types of annuities based on the timing of payments:
+                                <ul>
+                                    <li>Perpetuity: a series of equal-sized, regularly-scheduled payments paid indefinitly</li>
+                                    <li>Annuity: a series of equal-sized, regularly-scheduled payments over a specified, finite period of time
+                                        <ul>
+                                            <li>Ordinary Annuity: Payments are made at the end of each period</li>
+                                            <li>Annuity Due: Payments are made at the beginning of each period</li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </p>
+                            <p>Since perpetuities are rare, we focused largely on annuities. Specifically, we calculated the Future Value of Annuities (FVA) using the following equation:</p>
+                            <div class="text-center">
+                                <img src="./images/tvm3_fva_formula_with_compounding.png" class="img-fluid img-math" alt="">
+                            </div>
+                            <div class="math">
+                                <span class="FV">FVA</span> = The future value of the annuity<br>
+                                <span class="CF">CF</span> = amount of each payment<br>
+                                <span class="yrs">n</span> = number of years<br>
+                                <span class="int">i</span> = stated interest rate<br>
+                                <span class="cmpd">m</span> = number of compounding periods
+                            </div>
+                            <p>This brings us up to the topic of this tutorial. We can calculate the Future Value of Annuities, but <b>what about the Present Value of Annuities</b>?</p>
                         </div>
                     </div>
                 </div>
@@ -238,34 +239,17 @@
             <div id="slide6" class="slide">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
-                        <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                        <h3 class="secondaryTitle">Introduction</h3>
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Present Value of Annuities (PVA)</h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 col-sm-12">
                         <div class="content">
-                            <h3>Example:</h3>
-                            <p class="question">What is the future value of an account if I deposit $1000 at the start of each year for 10 years at 10% interest?</p>
-                            <p>Given the TVM equation with compounding (below), could you answer this question?
-                                <div class="text-center">
-                                    <img src="./images/tvm2_question2_p1.png" class="img-fluid img-math" alt="">
-                                </div>
+                            <p>The Present Value of Annuities (PVA) answers the question:
+                                <div class="question">How much would I pay today for a stream of cash flows over a finite period of time at a specific interest rate?</div>
                             </p>
-                            <p>You could use the formula you already know to calculate the future value of each payment individually and then add them all together, like this:
-                                <div class="text-center">
-                                    <img src="./images/tvm3_calculate_cash_flows_separately.png" class="img-fluid img-math" alt="">
-                                </div>
-                                ... and so on, until you have the Future Value of all 10 payments. Adding them together results in a Future Value of $17,531.17.
-                            </p>
-                            <p>Although you can find the correct answer by calculating the Future Value of each individual cash flow as demonstrated above, it is a time consuming and inefficient process. Further:
-                                <ul>
-                                    <li>Its boring and tedious!</li>
-                                    <li>Each individual calculation introduces another opportunity to commit a rounding or calculation error.</li>
-                                    <li>Even if you use a spreadsheet and formulas, questions with really long terms (e.g., a 45 year retirement account) are still unwieldy.</li>
-                                </ul>
-                                The good news is that the TVM equation can be modified to account for cash flows. In this tutorial, we are going to talk about two different types of cash flows:</p>
-                            <h5>Perpetuities and Annuities</h5>
+                            <p>Finding the Present Value is know as discounting, and its the reverse of compounding.</p>
                         </div>
                     </div>
                 </div>
@@ -289,7 +273,7 @@
             <div id="slide7" class="slide">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
-                        <h2 class="primaryTitle">TVM: Cash Flows</h2>
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
                         <h3 class="secondaryTitle">Perpetuities</h3>
                     </div>
                 </div>
@@ -331,705 +315,369 @@
                     </div>
                 </div>
             </div>
-        </div>
 
 
 
 
-        <!---------------- SLIDE 8 - CONTENT *********** -->
-        <div id="slide8" class="slide">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Annuities</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <h3>Annuities</h3>
-                        <hr>
-                        <h5>An annuity is a regularly-scheduled, equal-sized cash flows over a specified, finite period of time.</h5>
-                        <p>To break that down:
-                            <ul>
-                                <li><span class="alert">equal-sized:</span> every payment is the same amount</li>
-                                <li><span class="alert">regularly-scheduled:</span> payments are received at regular intevals (e.g., monthly, annually, or bi-weekly)</li>
-                                <li><span class="alert">specified priod:</span> when the term ends, payments stop</li>
-                            </ul>
-                            Annuities are similar to perpetuities except that annuities cease after a specific number of payments.
-                            <ul>
-                                <li>Mortgages</li>
-                                <li>Car loans, Credit cards, and other loans</li>
-                                <li>Automatic contributions from your paycheck to a retirement account (e.g., 401k)</li>
-                                <li>A bond with coupon payments</li>
-                            </ul>
-                            At some point in your life, you will have one, if not all, of the annuities listed above. Therefore, you will find TVM with cash flows very useful in personal and professional decision making.</p>
+            <!---------------- SLIDE 8 - CONTENT *********** -->
+            <div id="slide8" class="slide">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Annuities</h3>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1 col-sm-1">
-                    <div class="pageNumber">8</div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <!---------------- SLIDE 9 - CONTENT ********************** -->
-        <div id="slide9" class="slide">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Annuities</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <p>There are two types of annuities:
-                            <ul>
-                                <li>Regular Annuity, also known as an Ordinary Annuity</li>
-                                <li>Annuity Due</li>
-                            </ul>
-                        </p>
-                        <p>The difference is in the timing of cash flows.
-                            <ul>
-                                <li>Regular annuity: cash flow arrives at the <span class="alert">end</span> of each period</li>
-                                <li>Annuity due: cash flow arrives at the <span class="alert">beginning</span> of each period</li>
-                            </ul>
-                        </p>
-                        <p>If the problem does not specifiy whether you are dealing with a regular annuity or an annuity due, or if it doesn't state when payments are made, <b>assume that it is a regular annuity</b>.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-5 col-sm-3">
-                    <div class="pageNumber">9</div>
-                </div>
-            </div>
-        </div>
-        <!---------------- end SLIDE 9 - CONTENT ********************** -->
-
-
-
-        <!---------------- SLIDE 10 - CONTENT *********** -->
-        <div id="slide10" class="slide">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Annuities</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <h5>Why does the timing of the cash flows matter? Look at the timelines of a regular annuity or an annuity due:</h5>
-                        <p>
-                            <div class="text-center">
-                                <img src="./images/tvm3_annuity_regular_vs_due.png" class="img-fluid img-math" alt="">
-                            </div>
-                            As you can see, the annuity due pays an extra period of interest on each payment. The extra interest results in a higher Future Value for an annuity due, as compared to an ordinary annuity.
-                        </p><br>
-                        <div class="row">
-                            <div class="col-12 col-sm-12">
-                                <h5>Think about annuities in your own life and the timing of the payments.</h5>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6">
-                                <p>
-                                    <h6>Examples of Ordinary Annuities</h6>
-                                    <ul>
-                                        <li>Credit Card payments</li>
-                                        <li>Direct Deposits in Retirement Accounts</li>
-                                    </ul>
-                                </p>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6">
-                                <p>
-                                    <h6>Examples of Annuities due</h6>
-                                    <ul>
-                                        <li>Property rents/leases are due at the beginning of the month</li>
-                                        <li>Insurance Premiums are due up front</li>
-                                    </ul>
-
-                                </p>
-                            </div>
-                            <b>Most annuities are ordinary annuities.</b>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <h3>Annuities</h3>
+                            <hr>
+                            <h5>An annuity is a regularly-scheduled, equal-sized cash flows over a specified, finite period of time.</h5>
+                            <p>To break that down:
+                                <ul>
+                                    <li><span class="alert">equal-sized:</span> every payment is the same amount</li>
+                                    <li><span class="alert">regularly-scheduled:</span> payments are received at regular intevals (e.g., monthly, annually, or bi-weekly)</li>
+                                    <li><span class="alert">specified priod:</span> when the term ends, payments stop</li>
+                                </ul>
+                                Annuities are similar to perpetuities except that annuities cease after a specific number of payments.
+                                <ul>
+                                    <li>Mortgages</li>
+                                    <li>Car loans, Credit cards, and other loans</li>
+                                    <li>Automatic contributions from your paycheck to a retirement account (e.g., 401k)</li>
+                                    <li>A bond with coupon payments</li>
+                                </ul>
+                                At some point in your life, you will have one, if not all, of the annuities listed above. Therefore, you will find TVM with cash flows very useful in personal and professional decision making.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-1 col-sm-1">
-                    <div class="pageNumber">10</div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <!---------------- SLIDE 11 - CONTENT -->
-        <div id="slide11" class="slide">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Annuities</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <p>Let's work through a problem together.</p>
-                        <p>Example:</p>
-                        <p class="question">If you plan to deposit $100 at the end of each year for 3 years, how much will you have in 3 years?</p>
-                        <p>First, determine whether its an ordinary annuity or annuity due and draw the timeline.</p>
-                        <p class="indent">The cash flows in the question constitute an ordinary annuity because the payments arrive "at the end of each year". The timeline looks like this:
-                            <div class="text-center">
-                                <img src="./images/tvm3_example_1_ordinary_annuity.png" class="img-fluid img-math" alt="">
-                            </div>
-                        </p>
-                        <p>To calculate Future Value, we could just calculate the FV of each lump sum payment using the general format of the TVM equation:
-                            <div class="math">
-                                Payment 1: FV = $121<br>
-                                Payment 2: FV = $110<br>
-                                Payment 3: FV = $100<br>
-                                <br>
-                                FV = 121 + 110 + 100 = $331
-                            </div>
-                        </p>
-                        <p>If you don't understand how FV was calculated, click Help. If you understand the calculation, click Continue.</p>
+                <div class="row">
+                    <div class="col-1 col-sm-1">
+                        <div class="pageNumber">8</div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <!-- to help 1 -->
-                    <button type="button" class="continue help btn">Help</button>
-                    <button type="button" class="skip btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1 col-sm-1">
-                    <div class="pageNumber">11</div>
-                </div>
-            </div>
-        </div>
 
 
 
-        <!---------------- help 1 --------------->
-        <div id="tvm3-help1" class="slide helpSlide">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Help Me!</h3>
+            <!---------------- SLIDE 9 - CONTENT ********************** -->
+            <div id="slide9" class="slide">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Annuities</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <h3>Calculating the FV of Lump Sums</h3>
-                        <p class="question">If you plan to deposit $100 at the end of each year for 3 years, how much will you have in 3 years?</p>
-                        <h5>Use the general format of the TVM equation to perform the calculations:</h5>
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-6">
-                                <img src="./images/tvm_basic_equation.png" class="img-fluid img-math" alt="">
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6">
-                                <img src="./images/tvm3_example_1_ordinary_annuity.png" class="img-fluid img-math" alt="">
-                            </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <p>There are two types of annuities:
+                                <ul>
+                                    <li>Regular Annuity, also known as an Ordinary Annuity</li>
+                                    <li>Annuity Due</li>
+                                </ul>
+                            </p>
+                            <p>The difference is in the timing of cash flows.
+                                <ul>
+                                    <li>Regular annuity: cash flow arrives at the <span class="alert">end</span> of each period</li>
+                                    <li>Annuity due: cash flow arrives at the <span class="alert">beginning</span> of each period</li>
+                                </ul>
+                            </p>
+                            <p>If the problem does not specifiy whether you are dealing with a regular annuity or an annuity due, or if it doesn't state when payments are made, <b>assume that it is a regular annuity</b>.</p>
                         </div>
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-4">
-                                <img src="./images/tvm3_example1_lumpsum1.png" class="img-fluid math-img" alt="">
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-4">
-                                <img src="./images/tvm3_example1_lumpsum2.png" class="img-fluid math-img" alt="">
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-4">
-                                <img src="./images/tvm3_example1_lumpsum3.png" class="img-fluid math-img" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 col-sm-3">
+                        <div class="pageNumber">9</div>
+                    </div>
+                </div>
+            </div>
+            <!---------------- end SLIDE 9 - CONTENT ********************** -->
+
+
+
+            <!---------------- SLIDE 10 - CONTENT *********** -->
+            <div id="slide10" class="slide">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Annuities</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <h5>Why does the timing of the cash flows matter? Look at the timelines of a regular annuity or an annuity due:</h5>
+                            <p>
+                                <div class="text-center">
+                                    <img src="./images/tvm3_annuity_regular_vs_due.png" class="img-fluid img-math" alt="">
+                                </div>
+                                As you can see, the annuity due pays an extra period of interest on each payment. The extra interest results in a higher Future Value for an annuity due, as compared to an ordinary annuity.
+                            </p><br>
+                            <div class="row">
+                                <div class="col-12 col-sm-12">
+                                    <h5>Think about annuities in your own life and the timing of the payments.</h5>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6">
+                                    <p>
+                                        <h6>Examples of Ordinary Annuities</h6>
+                                        <ul>
+                                            <li>Credit Card payments</li>
+                                            <li>Direct Deposits in Retirement Accounts</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6">
+                                    <p>
+                                        <h6>Examples of Annuities due</h6>
+                                        <ul>
+                                            <li>Property rents/leases are due at the beginning of the month</li>
+                                            <li>Insurance Premiums are due up front</li>
+                                        </ul>
+
+                                    </p>
+                                </div>
+                                <b>Most annuities are ordinary annuities.</b>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
+
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-5 col-sm-3">
-                    <div class="pageNumber">Help 1</div>
-                </div>
-            </div>
-        </div>
-        <!---------------- end help 1 --------------->
-
-
-
-
-        <!---------------- SLIDE 12 - CONTENT -->
-        <div id="slide12" class="slide">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Annuities</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <p>Calculating the FV of each individual payment is fine when there are only a few payments, but isn't recommended for long-term annuities. Therefore, we'll calculate the Future Value of the annuity (FVA) using the following equation:</p>
-                        <div class="text-center">
-                            <img src="./images/tvm3_fva_formula.png" class="img-fluid img-math" alt="">
-                        </div>
-                        <div class="math">
-                            <span class="FV">FVA</span> = The future value of the annuity<br>
-                            <span class="CF">CF</span> = Dollar amount of the individual cash flows<br>
-                            <span class="yrs">n</span> = number of years<br>
-                            <span class="int">i</span> = stated interest rate
-                        </div>
-                        <p>The FVA equation can be derived from the genral format of the TVM equation. The derivation won't be shown here, but you should be aware that there is a relationship between the two equations.</p>
+                <div class="row">
+                    <div class="col-1 col-sm-1">
+                        <div class="pageNumber">10</div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
+
+
+
+
+            <!---------------- SLIDE 11 - CONTENT -->
+            <div id="slide11" class="slide">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Annuities</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-1 col-sm-1">
-                    <div class="pageNumber">12</div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-        <!---------------- SLIDE 13 - CONTENT -->
-        <div id="slide13" class="slide">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Annuities</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <p>Now that we have the timeline and formula, we can use them to identify the variables and solve for FVA.</p>
-                        <p>Example:</p>
-                        <p class="question">How much is an annuity worth at the end of the three years if it pays $100 at the end of each year assuming 10% interest?</p>
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-6">
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <p>Let's work through a problem together.</p>
+                            <p>Example:</p>
+                            <p class="question">If you plan to deposit $100 at the end of each year for 3 years, how much will you have in 3 years?</p>
+                            <p>First, determine whether its an ordinary annuity or annuity due and draw the timeline.</p>
+                            <p class="indent">The cash flows in the question constitute an ordinary annuity because the payments arrive "at the end of each year". The timeline looks like this:
                                 <div class="text-center">
                                     <img src="./images/tvm3_example_1_ordinary_annuity.png" class="img-fluid img-math" alt="">
                                 </div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6">
-                                <div class="text-center">
-                                    <img src="./images/tvm3_fva_formula.png" class="img-fluid img-math" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <p>Stay on this screen while you solve the problem. If you need help solving the problem, click Help. If you have the answer, click Continue.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="continue btn help">Help</button>
-                    <button type="button" class="skip btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1 col-sm-1">
-                    <div class="pageNumber">13</div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <!---------------- help 2 --------------->
-        <div id="tvm3-help2" class="slide helpSlide">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Help Me!</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <h4>Identify the Basic Variables (<span class="FV">FVA</span>, <span class="CF">CF</span>, <span class="int">i</span>, <span class="yrs">n</span>)</h4>
-                        <p class="question">How much is an annuity worth at the end of three years if it pays $100 at the end of each year assuming 10% interest?</p>
-                        <p>Let's break down the question. <span class="FV">FVA</span> is the future value of the annuity payments. The question asks "how much is the annuity worth at the end", so this must be the unknown variable. This means <span class="FV math">FV</span> = ?.</p>
-                        <p><span class="yrs">n</span> is the measure of time in years. In other problems, you might see n expressed as a number or as a noun like decade or century. This means <span class="yrs math">n</span> = 3.</p>
-                        <p><span class="CF">CF</span> is the value of the regularly scheduled cash flow. This means <span class="CF math">CF</span> = $100.</p>
-                        <p><span class="int">i</span> is the rate of return. The % is an indicator of interest. This means that <span class="int math">i</span> = 10%. Generally, this number is converted to a decimal for use in equations. 10% is the same as .10.</p>
-                        <p class="question">How much is <span class="FV">an annuity worth at the end</span> of <span class="yrs">three years</span> if it <span class="CF">pays $100</span> at the end of each year assuming <span class="int">10% interest</span>?
-                            <div class="math">
-                                <span class="FV">FV</span> = ?<br>
-                                <span class="yrs">n</span> = 3<br>
-                                <span class="CF">CF</span> = 100<br>
-                                <span class="int">i</span> = 10% &rarr; .10
-                            </div>
-                        </p>
-                        <hr>
-                        <br>
-                        <h4>Plug the Variables into the Equation</h4>
-                        <p>Once you have identified the variables, plug the numbers you've identified into the equation.</p>
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-6">
+                            </p>
+                            <p>To calculate Future Value, we could just calculate the FV of each lump sum payment using the general format of the TVM equation:
                                 <div class="math">
-                                    <span class="FV">FV</span> = ?<br>
-                                    <span class="yrs">n</span> = 3<br>
-                                    <span class="CF">CF</span> = 100<br>
-                                    <span class="int">i</span> = 10% &rarr; .10
+                                    Payment 1: FV = $121<br>
+                                    Payment 2: FV = $110<br>
+                                    Payment 3: FV = $100<br>
+                                    <br>
+                                    FV = 121 + 110 + 100 = $331
                                 </div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6">
-                                <div class="math">
-                                    <img src="./images/tvm3_fva_example1_help2.png" class="img-fluid img-math" alt="">
-                                </div>
-                            </div>
-
+                            </p>
+                            <p>If you don't understand how FV was calculated, click Help. If you understand the calculation, click Continue.</p>
                         </div>
-                        <hr>
-                        <br>
-                        <h4>Calculating FVA</h4>
-                        <p>Once you have plugged the variables into the equation, solve using the order of operations. Remember the acronym <b>PEMDAS</b>. Start with parentheses and then exponents. Then perform (from left to right) multiplication and division. Finally, add and subtract (from left to right).</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <!-- to help 1 -->
+                        <button type="button" class="continue help btn">Help</button>
+                        <button type="button" class="skip btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 col-sm-1">
+                        <div class="pageNumber">11</div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-5 col-sm-3">
-                    <div class="pageNumber">Help 2</div>
-                </div>
-            </div>
-        </div>
-        <!---------------- end help 2 --------------->
 
 
 
-        <!---------------- SLIDE 14 - CONTENT -->
-        <div id="slide14" class="slide">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Ordinary Annuity</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <p class="question">How much is an annuity worth at the end of three years if it pays $100 at the end of each year assuming 10% interest?</p>
-                        <p>FVA = $331, which agrees with our calculation of Future Value for each individual lump sum payment.</p>
-                        <p>If you didn't get the answer correct, click Help to see how to calculate the answer. Click Continue if you got the answer correct.</p>
+            <!---------------- help 1 --------------->
+            <div id="tvm3-help1" class="slide helpSlide">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Help Me!</h3>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1 col-sm-1">
-                    <div class="pageNumber">14</div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <!---------------- SLIDE 15  - CONTENT -->
-        <div id="slide15" class="slide">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Ordinary Annuity</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <p>Let's verify the answer a third way: by entering the variables into your financial calculator.</p>
-                        <p class="question">How much is an annuity worth at the end of three years if it pays $100 at the end of each year assuming 10% interest?</p>
-                        <div class="text-center">
-                            <img src="./images/tvm3_calculator_check_example.png" class="img-fluid img-math" alt="">
-                        </div>
-                        <p class="alert">Note: Make sure your calculator is on END mode. This is one of the most common erros made during tests.</p>
-                        <p>Again, FVA = $331, which agrees with our two other modes of calculation, the FVA formula and FV of individual lump sum payments.</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1 col-sm-1">
-                    <div class="pageNumber">15</div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <!---------------- SLIDE 16  - CONTENT -->
-        <div id="slide16" class="slide">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">FVA Factor</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <p>A forth way to calculate FVA is using a table of FVA factors. Mathematically, the FVA Factor represents the calculation within the brackets of the FVA formula.</p>
-                        <div class="text-center">
-                            <img src="./images/tvm3_fva_formula_with_fva_factor.png" class="img-fluid img-math" alt="">
-                        </div>
-                        <p>If you know the FVA Factor, you can simply multiply it by CF to find FVA. Let's solve the same problem again using an FVA Factors table.</p>
-                        <p class="question">How much is an annuity worth at the end of three years if it pays $100 at the end of each year assuming 10% interest?
-                            <div class="math math-big">
-                                <span class="FV">FVA</span> = <span class="CF">CF</span>[FVA Factor]
-                            </div>
-                            The intersection of <span class="yrs">n</span> = 3 in the left column and <span class="int">i</span> = 10% in the top row shows the FVA factor. Then multiply the FVA factor by the <span class="CF">CF</span> = 100.
-                            <div class="text-center">
-                                <img src="./images/future_value_annuity.png" class="img-fluid img-math" alt=""><br>
-                                <img src="./images/tvm3_fva_factor.png" class="img-fluid img-math" alt="">
-                            </div>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn">Help</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1 col-sm-1">
-                    <div class="pageNumber">16</div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <!---------------- SLIDE 17  - CONTENT -->
-        <div id="slide17" class="slide">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Annuity Due</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <p>How would the problem we just solved change if payments were made at the beginning of each term (i.e., an annuity due rather than an ordinary annuity)?</p>
-                        <p class="question">How much is an annuity worth at the end of three years if it pays $100 at the beginning of each year assuming 10% interest?</p>
-                        <p>Looking at the timeline, you can see that each payment earns an extra year of interest.
-                            <div class="text-center">
-                                <img src="./images/tvm3_example2_annuity_due.png" class="img-fluid img-math" alt="">
-                            </div>
-                        </p>
-                        <p>We've already calculated that the ordinary annuity's FV is $331.00. Now we'll use the basic TVM equation to add one more year of interest.
-                            <div class="text-center">
-                                <img src="./images/tvm3_example_1_ordinary_annuity_pv_year_2.png" class="img-fluid img-math" alt="">
-                            </div>
-                        </p>
-                        <p>We can work a little magic here. An annuity due is basically the ordinary annuity with an extra period of interest as show in the two timelines below.
-                            <div class="text-center">
-                                <h5>Ordinary Annuity</h5>
-                                <img src="./images/tvm3_example_1_ordinary_annuity.png" class="img-fluid img-math" alt="">
-                            </div>
-                            <div class="text-center">
-                                <h5>Annuity Due</h5>
-                                <img src="./images/tvm3_example_1_ordinary_annuity_pv_year_2.png" class="img-fluid img-math" alt="">
-                            </div>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1 col-sm-1">
-                    <div class="pageNumber">17</div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <!---------------- SLIDE 18  - CONTENT -->
-        <div id="slide18" class="slide">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Annuity Due</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <p class="question">How much is an annuity worth at the end of three years if it pays $100 at the beginning of each year assuming 10% interest?</p>
-
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-6">
-                                <div class="text-center">
-                                    <img src="./images/tvm3_example_1_ordinary_annuity_pv_year_2.png" class="img-fluid img-math" alt="">
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6">
-                                <div class="text-center">
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <h3>Calculating the FV of Lump Sums</h3>
+                            <p class="question">If you plan to deposit $100 at the end of each year for 3 years, how much will you have in 3 years?</p>
+                            <h5>Use the general format of the TVM equation to perform the calculations:</h5>
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6">
                                     <img src="./images/tvm_basic_equation.png" class="img-fluid img-math" alt="">
                                 </div>
+                                <div class="col-12 col-sm-12 col-md-6">
+                                    <img src="./images/tvm3_example_1_ordinary_annuity.png" class="img-fluid img-math" alt="">
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <h5>To solve:</h5>
-                            <ul>
-                                <li>First, find the FVA (just as you would for an ordinary annuity). We already know its $331.00, and we'll use this as the PV in year 2.</li>
-                                <li>Then bring the FVA forward another year to reflect the extra period of interest using the TVM equation and solving for FV in year 3.
-                                    <div class="text-center">
-                                        <img src="./images/tvm3_example2_annuity_due_fv_calculation_alternate_version.png" class="img-fluid img-math" alt="">
-                                    </div>
-                                </li>
-                            </ul>
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-4">
+                                    <img src="./images/tvm3_example1_lumpsum1.png" class="img-fluid math-img" alt="">
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-4">
+                                    <img src="./images/tvm3_example1_lumpsum2.png" class="img-fluid math-img" alt="">
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-4">
+                                    <img src="./images/tvm3_example1_lumpsum3.png" class="img-fluid math-img" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 col-sm-3">
+                        <div class="pageNumber">Help 1</div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-1 col-sm-1">
-                    <div class="pageNumber">18</div>
-                </div>
-            </div>
-        </div>
+            <!---------------- end help 1 --------------->
 
-        <!---------------- SLIDE 19  - CONTENT -->
-        <div id="slide19" class="slide">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Annuities with Compound Interest</h3>
+
+
+
+            <!---------------- SLIDE 12 - CONTENT -->
+            <div id="slide12" class="slide">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Annuities</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <p>The FVA equation can also be modified to account for compound interest:
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <p>Calculating the FV of each individual payment is fine when there are only a few payments, but isn't recommended for long-term annuities. Therefore, we'll calculate the Future Value of the annuity (FVA) using the following equation:</p>
                             <div class="text-center">
-                                <img src="./images/tvm3_exercise2_solution_part1.png" class="img-fluid img-math" alt="">
+                                <img src="./images/tvm3_fva_formula.png" class="img-fluid img-math" alt="">
                             </div>
-                        </p>
-                        <p>Notice that we simply modified the existing formula. the variable m stands for the number of compounding periods per year.
-                            <ul>
-                                <li>The adjustment made to the FVA equation is the same adjustment we made to the general TVM equation, dividing each <span class="int">i</span> by <span class="cmpd">m</span> and multiplying <span class="yrs">n</span> by <span class="cmpd">m</span>.</li>
-                                <li>As before, the calculation in the brackets can be replaced from a figure taken from the FVA Factor table.</li>
-                            </ul>
-                            Let's modify our example to practice calculating FVA with compound interest.
-                        </p>
-                        <p class="question">How much is an annuity worth at the end of three years if it pays $10 a month at the end of each month assuming 10% interest?</p>
-                        <p>This is an ordinary annuity with compounding. Calculate the FVA. Stay on this screen while you solve the problem. If you get stuck, click Help. If you are able to solve the problem, click Continue.</p>
+                            <div class="math">
+                                <span class="FV">FVA</span> = The future value of the annuity<br>
+                                <span class="CF">CF</span> = Dollar amount of the individual cash flows<br>
+                                <span class="yrs">n</span> = number of years<br>
+                                <span class="int">i</span> = stated interest rate
+                            </div>
+                            <p>The FVA equation can be derived from the genral format of the TVM equation. The derivation won't be shown here, but you should be aware that there is a relationship between the two equations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 col-sm-1">
+                        <div class="pageNumber">12</div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="continue btn help">Help</button>
-                    <button type="button" class="skip btn">Continue</button>
+
+
+
+
+
+            <!---------------- SLIDE 13 - CONTENT -->
+            <div id="slide13" class="slide">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Annuities</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <p>Now that we have the timeline and formula, we can use them to identify the variables and solve for FVA.</p>
+                            <p>Example:</p>
+                            <p class="question">How much is an annuity worth at the end of the three years if it pays $100 at the end of each year assuming 10% interest?</p>
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6">
+                                    <div class="text-center">
+                                        <img src="./images/tvm3_example_1_ordinary_annuity.png" class="img-fluid img-math" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6">
+                                    <div class="text-center">
+                                        <img src="./images/tvm3_fva_formula.png" class="img-fluid img-math" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Stay on this screen while you solve the problem. If you need help solving the problem, click Help. If you have the answer, click Continue.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="continue btn help">Help</button>
+                        <button type="button" class="skip btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 col-sm-1">
+                        <div class="pageNumber">13</div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-1 col-sm-1">
-                    <div class="pageNumber">19</div>
+
+
+
+            <!---------------- help 2 --------------->
+            <div id="tvm3-help2" class="slide helpSlide">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Help Me!</h3>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-
-        <!-- ********** help 3 ************************ -->
-        <div id="tvm3-help3" class="slide helpSlide">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Help Me!</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <div>
-                            <h4>Identify the Basic Variables (<span class="FV">FVA</span>, <span class="CF">CF</span>, <span class="int">i</span>, <span class="yrs">n</span>, <span class="cmpd">m</span>)</h4>
-
-                            <p class="question">How much is an annuity worth at the end of three years if it pays $10 per month at the end of each month assuming 10% interest?</p>
-
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <h4>Identify the Basic Variables (<span class="FV">FVA</span>, <span class="CF">CF</span>, <span class="int">i</span>, <span class="yrs">n</span>)</h4>
+                            <p class="question">How much is an annuity worth at the end of three years if it pays $100 at the end of each year assuming 10% interest?</p>
                             <p>Let's break down the question. <span class="FV">FVA</span> is the future value of the annuity payments. The question asks "how much is the annuity worth at the end", so this must be the unknown variable. This means <span class="FV math">FV</span> = ?.</p>
-
                             <p><span class="yrs">n</span> is the measure of time in years. In other problems, you might see n expressed as a number or as a noun like decade or century. This means <span class="yrs math">n</span> = 3.</p>
-
-                            <p><span class="CF">CF</span> is the value of the regularly scheduled cash flow. This means <span class="CF math">CF</span> = $10.</p>
-
-                            <p><span class="cmpd">m</span> is the number of times interest is compounded per year. Adverbs like semi-annually, quarterly, monthly, or daily are often clues. In this case, its monthly, which is 12 times per year. <span class="cmpd">m</span> = 12.</p>
-
+                            <p><span class="CF">CF</span> is the value of the regularly scheduled cash flow. This means <span class="CF math">CF</span> = $100.</p>
                             <p><span class="int">i</span> is the rate of return. The % is an indicator of interest. This means that <span class="int math">i</span> = 10%. Generally, this number is converted to a decimal for use in equations. 10% is the same as .10.</p>
-
-                            <p class="question">How much is <span class="FV">an annuity worth at the end</span> of <span class="yrs">three years</span> if it <span class="CF">pays $10</span> <span class="cmpd">per month</span> at the end of each month assuming <span class="int">10% interest</span>?
+                            <p class="question">How much is <span class="FV">an annuity worth at the end</span> of <span class="yrs">three years</span> if it <span class="CF">pays $100</span> at the end of each year assuming <span class="int">10% interest</span>?
                                 <div class="math">
                                     <span class="FV">FV</span> = ?<br>
                                     <span class="yrs">n</span> = 3<br>
@@ -1037,811 +685,1146 @@
                                     <span class="int">i</span> = 10% &rarr; .10
                                 </div>
                             </p>
-
                             <hr>
                             <br>
-                        </div>
-                        <div>
-                        </div>
-                        <h4>Plug the Variables into the Equation</h4>
-                        <p>Once you have identified the variables, plug the numbers you've identified into the equation.</p>
-                        <div class="text-center">
-                            <img src="./images/tvm3_example3.png" class="img-fluid img-math" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-5 col-sm-3">
-                    <div class="pageNumber">Help 3</div>
-                </div>
-            </div>
-        </div>
-        <!-- ********** end help 3 ************************ -->
-
-
-
-        <!---------------- SLIDE 20  - CONTENT -->
-        <div id="slide20" class="slide">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Ordinary Annuity</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <p class="question">How much is an annuity worth at the end of three years if it pays $10 per month at the end of each month assuming 10% interest?</p>
-                        <p class="answer">FVA = $417.99</p>
-                        <p>Did you get the answer right? If not, please click on Help to see how to calculate the problem. If you answered correctly, please click Continue.</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back help btn">Help</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1 col-sm-1">
-                    <div class="pageNumber">20</div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <!---------------- SLIDE 21  - CONTENT -->
-        <div id="slide21" class="slide">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Annuities with Compound Interest</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <p>In general, the FVA of an annuity will be higher if payments are split into smaller pieces and paid more often?</p>
-                        <p>For instance, homeowners sometimes save money by paying half the mortgage payment every two weeks, instead of the full amount on a monthly basis.</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back help btn">Help</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1 col-sm-1">
-                    <div class="pageNumber">21</div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <!-- ***************** exercises ********************* -->
-        <!-- exercise intro slide -->
-        <div id="exercises3-slide1" class="slide exercises">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Exercises</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <h3>Exercises</h3>
-                        <p>Now you'll have a chance to try some exercises on your own. For these individual exercises, do not use the TVM buttons on your financial calculator unless instructed to do so.</p>
-                        <p class="note">Include dollars and cents on each answer. Do not include commas or dollar signs. A properly formatted answer looks like: <b>1150.38</b></p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn hide">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1 col-sm-1">
-                    <div class="pageNumber">1</div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <!-- exercises3 slide 2  : problem 1 -->
-        <div id="exercises3-slide2" class="slide exercises">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Exercises</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <!-- Exercises -->
-                        <h4>Identify the Variables</h4>
-                        <p>Enter the value of each variable in the boxes below. Leave the unknown variable blank. Then submit your answer.</span></p>
-                        <p class="question">If I save $1200 per year in an account that earns 8% interest (annually compounded) for 20 years, how much should my account be worth?</p>
-                        <div class="container">
-                            <div class="">
-                                <form action="" class="indent">
-
-                                    <label><span class="FV">FVA</span> </label>
-                                    <input id="fv-ex1" type="number" placeholder="0"><br>
-
-                                    <label><span class="CF">CF</span> </label>
-                                    <input id="cf-ex1" type="number" placeholder="0"><br>
-
-                                    <label>&nbsp;&nbsp;&nbsp;<span class="int">i </span></label>
-                                    <input id="int-ex1" type="number" placeholder="0.00"><br>
-
-                                    <label>&nbsp;&nbsp;<span class="yrs">n</span> </label>
-                                    <input id="yrs-ex1" type="number" placeholder="0"><br>
-
-                                    <label>&nbsp;<span class="cmpd">m</span> </label>
-                                    <input id="cmpd-ex1" type="number" placeholder="0"><br>
-
-                                </form>
-                                <button onclick="exercise_1()" type="button" class="btn calculateBtn">Submit</button>
-                            </div>
-                            <br>
-                            <div class="answer" id="answer-ex1"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn hide">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-5">
-                    <div class="pageNumber">2 <span class="note">&nbsp;(Question 1 of 6)</span></div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <!-- exercises3 slide 3 - problem 1 answer  -->
-        <div id="exercises3-slide3" class="slide exercises">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Exercises</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <!-- Help -->
-                        <h4>Solution</h4>
-                        <p class="question">If I save $1200 per year in an account that earns 8% interest (annually compounded) for 20 years, how much should my account be worth?</p>
-                        <p>Variables:</p>
-                        <p class="math">
-                            <span class="FVA">FV</span> = ? <br>
-                            <span class="CF">CF</span> = 1200 <br>
-                            <span class="int">i</span> = 8% &xrarr; 0.08<br>
-                            <span class="yrs">n</span> = 20<br>
-                            <span class="cmpd">m</span> = 1
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn hide">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-3">
-                    <div class="pageNumber">3</div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- exercises3-slide4 : problem 2 -->
-        <div id="exercises3-slide4" class="slide exercises">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Exercises</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <!-- Exercises -->
-                        <h4>Calculate the Unknown Variable</h4>
-                        <p class="question">If I save $1200 per year in an account that earns 8% interest (annually compounded) for 20 years, how much should my account be worth?</p>
-                        <div class="container">
-                            <div class="">
-                                <form action="" class="indent">
-                                    <label><span class="FV">FVA</span> </label>
-                                    $<input id="fv-ex2" type="number" placeholder="0"><br>
-                                </form>
-                                <button onclick="exercise_2()" type="button" class="btn calculateBtn">Submit</button>
-                            </div>
-                            <br>
-                            <div class="answer" id="answer-ex2"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn hide">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-5">
-                    <div class="pageNumber">4 <span class="note">&nbsp;(Question 2)</span></div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <!-- exercises3-slide5 : answer problem 2 -->
-        <div id="exercises3-slide5" class="slide exercises">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Exercises</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <!-- Help -->
-                        <h4>Solution</h4>
-                        <p class="question">If I save $1200 per year in an account that earns 8% interest (annually compounded) for 20 years, how much should my account be worth?</p>
-                        <br>
-                        <p>Variables:</p>
-                        <p class="math"><span class="FV">FVA</span> = ?<br>
-                            <span class="CF">CF</span> = 1200<br>
-                            <span class="int">i</span> = 0.08<br>
-                            <span class="yrs">n</span> = 20<br>
-                            <span class="cmpd">m</span> = 1</p>
-
-                        <p>Plug the numbers into the equation:</p>
-                        <p class="text-center">
-                            <img src="./images/tvm3_exercise1_solution.png" class="img-fluid img-math" alt="">
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn hide">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-3">
-                    <div class="pageNumber">5</div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-        <!-- exercises3-slide6 :  problem 3 -->
-        <div id="exercises3-slide6" class="slide exercises">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Exercises</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <!-- Exercises -->
-                        <h4>Identify the Variables</h4>
-                        <p>Enter the value of each variable in the boxes below. Leave the box for the unknown variable blank.</p>
-                        <p class="question">If I save $100 per month in an account earning a nominal rate of 8% per year for 20 years, how much should the account be worth?</p>
-                        <div class="container">
-                            <div class="">
-                                <form action="" class="indent">
-                                    <label><span class="FV">FVA</span> </label>
-                                    <input id="fv-ex3" type="number" placeholder="000"><br>
-                                    <label><span class="CF">CF</span> </label>
-                                    <input id="cf-ex3" type="number" placeholder="0"><br>
-                                    <label>&nbsp;&nbsp;&nbsp;<span class="int">i </span></label>
-                                    <input id="int-ex3" type="number" placeholder=".00"><br>
-                                    <label>&nbsp;&nbsp;<span class="yrs">n</span> </label>
-                                    <input id="yrs-ex3" type="number" placeholder="0"><br>
-                                    <label>&nbsp;<span class="cmpd">m</span> </label>
-                                    <input id="cmpd-ex3" type="number" placeholder="0"><br>
-                                </form>
-                                <button onclick="exercise_3()" type="button" class="btn calculateBtn">Submit</button>
-                            </div>
-                            <br>
-                            <div class="answer" id="answer-ex3"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn hide">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-5">
-                    <div class="pageNumber">6 <span class="note">&nbsp;(Question 3)</span></div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <!-- exercises3-slide7 :  answer problem 3 -->
-        <div id="exercises3-slide7" class="slide exercises">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Exercises</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <h4>Solution</h4>
-                        <p class="question">If I save $100 per month in an account earning a nominal rate of 8% per year for 20 years, how much should the account be worth?</p>
-                        <h5>Variables:</h5>
-                        <p class="math"><span class="FV">FVA</span> = ?<br>
-                            <span class="CF">CF</span> = 100<br>
-                            <span class="int">i</span> = 8% or 0.08<br>
-                            <span class="yrs">n</span> = 20<br>
-                            <span class="cmpd">m</span> = 12</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn hide">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-3">
-                    <div class="pageNumber">7</div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <!-- exercises3-slide8 :   problem 4 -->
-        <div id="exercises3-slide8" class="slide exercises">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Exercises</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <!-- Exercises -->
-                        <h4>Calculate the Unknown Variable</h4>
-                        <p class="question">If I save $100 per month in an account earning a nominal rate of 8% per year for 20 years, how much should the account be worth?</p>
-                        <div class="container">
-                            <div class="">
-                                <form action="" class="indent">
-                                    <label><span class="FV">FVA</span> </label>
-                                    $<input id="fv-ex4" type="number" placeholder="0.00"><br>
-                                </form>
-                                <button onclick="exercise_4()" type="button" class="btn calculateBtn">Submit</button>
-                            </div>
-                            <br>
-                            <div class="answer" id="answer-ex4"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn hide">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-5">
-                    <div class="pageNumber">8 <span class="note">&nbsp;(Question 4)</span></div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- exercises3-slide9 :   answer problem 4 -->
-        <div id="exercises3-slide9" class="slide exercises">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Exercises</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <h4>Solution</h4>
-                        <p class="question">If I save $100 per month in an account earning a nominal rate of 8% per year for 20 years, how much should the account be worth?</p>
-                        <p>Variables:</p>
-                        <p class="math">
-                            <span class="FV">FVA</span> = ?<br>
-                            <span class="CF">CF</span> = 100<br>
-                            <span class="int">i</span> = 0.08<br>
-                            <span class="yrs">n</span> = 20<br>
-                            <span class="cmpd">m</span> = 12</p>
-
-                        <p>Plug the numbers into the equation:</p>
-                        <p class="text-center">
-                            <img src="./images/tvm3_exercise2_solution.png" class="img-fluid img-math" alt="">
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn hide">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-3">
-                    <div class="pageNumber">9</div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-        <!-- exercises3-slide10 : problem 5  -->
-        <div id="exercises3-slide10" class="slide exercises">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Exercises</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <!-- Exercises -->
-                        <h4>Identify the Variables</h4>
-                        <p>Enter the value of each variable in the boxes below. Leave the unknown variable blank.</p>
-                        <p class="question">What if I deposited the $1200 a year at the beginning of the year for 20 years earning 8% interest? How much would the account be worth? <span class="note">(Hint: as an ordinary annuity, it was worth $54,914.36).</span></p>
-                        <div class="container">
-                            <div class="">
-                                <form action="" class="indent">
-                                    <label><span class="FV">FVA</span> </label>
-                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
-                                </form>
-                                <button onclick="exercise_5()" type="button" class="btn calculateBtn">Submit</button>
-                            </div>
-                            <br>
-                            <div class="answer" id="answer-ex5"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn hide">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-5">
-                    <div class="pageNumber">10 <span class="note">&nbsp;(Question 5)</span></div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <!-- exercises3-slide11 :   answer problem 5 -->
-        <div id="exercises3-slide11" class="slide exercises">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Exercises</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <h4>Solution</h4>
-                        <p class="question">What if I deposited the $1200 a year at the beginning of the year for 20 years earning 8% interest? How much would the account be worth? <span class="note">(Hint: as an ordinary annuity, it was worth $54,914.36).</span></p>
-                        <p>To convert from an ordinary annuity to an annuity due, every payment receives an extra period of interest. Use the general form of the TVM equation to add 1 year of interest.</p>
-                        <div class="text-center">
-                            <img src="./images/tvm3_exercise3_timeline.png" class="img-fluid img-math" alt="">
-                        </div>
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-6">
-                                <div class="math" style="margin-left: 30px;">
-                                    <span class="PV">PV</span> = $54,914.36<br>
-                                    <span class="FV">FV</span> = ?<br>
-                                    <span class="int">i</span> = 0.08<br>
-                                    <span class="yrs">n</span> = 1<br>
+                            <h4>Plug the Variables into the Equation</h4>
+                            <p>Once you have identified the variables, plug the numbers you've identified into the equation.</p>
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6">
+                                    <div class="math">
+                                        <span class="FV">FV</span> = ?<br>
+                                        <span class="yrs">n</span> = 3<br>
+                                        <span class="CF">CF</span> = 100<br>
+                                        <span class="int">i</span> = 10% &rarr; .10
+                                    </div>
                                 </div>
+                                <div class="col-12 col-sm-12 col-md-6">
+                                    <div class="math">
+                                        <img src="./images/tvm3_fva_example1_help2.png" class="img-fluid img-math" alt="">
+                                    </div>
+                                </div>
+
                             </div>
-                            <div class="col-12 col-sm-12 col-md-6">
+                            <hr>
+                            <br>
+                            <h4>Calculating FVA</h4>
+                            <p>Once you have plugged the variables into the equation, solve using the order of operations. Remember the acronym <b>PEMDAS</b>. Start with parentheses and then exponents. Then perform (from left to right) multiplication and division. Finally, add and subtract (from left to right).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 col-sm-3">
+                        <div class="pageNumber">Help 2</div>
+                    </div>
+                </div>
+            </div>
+            <!---------------- end help 2 --------------->
+
+
+
+            <!---------------- SLIDE 14 - CONTENT -->
+            <div id="slide14" class="slide">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Ordinary Annuity</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <p class="question">How much is an annuity worth at the end of three years if it pays $100 at the end of each year assuming 10% interest?</p>
+                            <p>FVA = $331, which agrees with our calculation of Future Value for each individual lump sum payment.</p>
+                            <p>If you didn't get the answer correct, click Help to see how to calculate the answer. Click Continue if you got the answer correct.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 col-sm-1">
+                        <div class="pageNumber">14</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!---------------- SLIDE 15  - CONTENT -->
+            <div id="slide15" class="slide">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Ordinary Annuity</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <p>Let's verify the answer a third way: by entering the variables into your financial calculator.</p>
+                            <p class="question">How much is an annuity worth at the end of three years if it pays $100 at the end of each year assuming 10% interest?</p>
+                            <div class="text-center">
+                                <img src="./images/tvm3_calculator_check_example.png" class="img-fluid img-math" alt="">
+                            </div>
+                            <p class="alert">Note: Make sure your calculator is on END mode. This is one of the most common erros made during tests.</p>
+                            <p>Again, FVA = $331, which agrees with our two other modes of calculation, the FVA formula and FV of individual lump sum payments.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 col-sm-1">
+                        <div class="pageNumber">15</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!---------------- SLIDE 16  - CONTENT -->
+            <div id="slide16" class="slide">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">FVA Factor</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <p>A forth way to calculate FVA is using a table of FVA factors. Mathematically, the FVA Factor represents the calculation within the brackets of the FVA formula.</p>
+                            <div class="text-center">
+                                <img src="./images/tvm3_fva_formula_with_fva_factor.png" class="img-fluid img-math" alt="">
+                            </div>
+                            <p>If you know the FVA Factor, you can simply multiply it by CF to find FVA. Let's solve the same problem again using an FVA Factors table.</p>
+                            <p class="question">How much is an annuity worth at the end of three years if it pays $100 at the end of each year assuming 10% interest?
+                                <div class="math math-big">
+                                    <span class="FV">FVA</span> = <span class="CF">CF</span>[FVA Factor]
+                                </div>
+                                The intersection of <span class="yrs">n</span> = 3 in the left column and <span class="int">i</span> = 10% in the top row shows the FVA factor. Then multiply the FVA factor by the <span class="CF">CF</span> = 100.
                                 <div class="text-center">
-                                    <img src="./images/tvm3_exercise3_solution.png" class="img-fluid img-math" alt="">
+                                    <img src="./images/future_value_annuity.png" class="img-fluid img-math" alt=""><br>
+                                    <img src="./images/tvm3_fva_factor.png" class="img-fluid img-math" alt="">
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn">Help</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 col-sm-1">
+                        <div class="pageNumber">16</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!---------------- SLIDE 17  - CONTENT -->
+            <div id="slide17" class="slide">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Annuity Due</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <p>How would the problem we just solved change if payments were made at the beginning of each term (i.e., an annuity due rather than an ordinary annuity)?</p>
+                            <p class="question">How much is an annuity worth at the end of three years if it pays $100 at the beginning of each year assuming 10% interest?</p>
+                            <p>Looking at the timeline, you can see that each payment earns an extra year of interest.
+                                <div class="text-center">
+                                    <img src="./images/tvm3_example2_annuity_due.png" class="img-fluid img-math" alt="">
+                                </div>
+                            </p>
+                            <p>We've already calculated that the ordinary annuity's FV is $331.00. Now we'll use the basic TVM equation to add one more year of interest.
+                                <div class="text-center">
+                                    <img src="./images/tvm3_example_1_ordinary_annuity_pv_year_2.png" class="img-fluid img-math" alt="">
+                                </div>
+                            </p>
+                            <p>We can work a little magic here. An annuity due is basically the ordinary annuity with an extra period of interest as show in the two timelines below.
+                                <div class="text-center">
+                                    <h5>Ordinary Annuity</h5>
+                                    <img src="./images/tvm3_example_1_ordinary_annuity.png" class="img-fluid img-math" alt="">
+                                </div>
+                                <div class="text-center">
+                                    <h5>Annuity Due</h5>
+                                    <img src="./images/tvm3_example_1_ordinary_annuity_pv_year_2.png" class="img-fluid img-math" alt="">
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 col-sm-1">
+                        <div class="pageNumber">17</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!---------------- SLIDE 18  - CONTENT -->
+            <div id="slide18" class="slide">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Annuity Due</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <p class="question">How much is an annuity worth at the end of three years if it pays $100 at the beginning of each year assuming 10% interest?</p>
+
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6">
+                                    <div class="text-center">
+                                        <img src="./images/tvm3_example_1_ordinary_annuity_pv_year_2.png" class="img-fluid img-math" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6">
+                                    <div class="text-center">
+                                        <img src="./images/tvm_basic_equation.png" class="img-fluid img-math" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h5>To solve:</h5>
+                                <ul>
+                                    <li>First, find the FVA (just as you would for an ordinary annuity). We already know its $331.00, and we'll use this as the PV in year 2.</li>
+                                    <li>Then bring the FVA forward another year to reflect the extra period of interest using the TVM equation and solving for FV in year 3.
+                                        <div class="text-center">
+                                            <img src="./images/tvm3_example2_annuity_due_fv_calculation_alternate_version.png" class="img-fluid img-math" alt="">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 col-sm-1">
+                        <div class="pageNumber">18</div>
+                    </div>
+                </div>
+            </div>
+
+            <!---------------- SLIDE 19  - CONTENT -->
+            <div id="slide19" class="slide">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Annuities with Compound Interest</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <p>The FVA equation can also be modified to account for compound interest:
+                                <div class="text-center">
+                                    <img src="./images/tvm3_exercise2_solution_part1.png" class="img-fluid img-math" alt="">
+                                </div>
+                            </p>
+                            <p>Notice that we simply modified the existing formula. the variable m stands for the number of compounding periods per year.
+                                <ul>
+                                    <li>The adjustment made to the FVA equation is the same adjustment we made to the general TVM equation, dividing each <span class="int">i</span> by <span class="cmpd">m</span> and multiplying <span class="yrs">n</span> by <span class="cmpd">m</span>.</li>
+                                    <li>As before, the calculation in the brackets can be replaced from a figure taken from the FVA Factor table.</li>
+                                </ul>
+                                Let's modify our example to practice calculating FVA with compound interest.
+                            </p>
+                            <p class="question">How much is an annuity worth at the end of three years if it pays $10 a month at the end of each month assuming 10% interest?</p>
+                            <p>This is an ordinary annuity with compounding. Calculate the FVA. Stay on this screen while you solve the problem. If you get stuck, click Help. If you are able to solve the problem, click Continue.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="continue btn help">Help</button>
+                        <button type="button" class="skip btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 col-sm-1">
+                        <div class="pageNumber">19</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ********** help 3 ************************ -->
+            <div id="tvm3-help3" class="slide helpSlide">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Help Me!</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <div>
+                                <h4>Identify the Basic Variables (<span class="FV">FVA</span>, <span class="CF">CF</span>, <span class="int">i</span>, <span class="yrs">n</span>, <span class="cmpd">m</span>)</h4>
+
+                                <p class="question">How much is an annuity worth at the end of three years if it pays $10 per month at the end of each month assuming 10% interest?</p>
+
+                                <p>Let's break down the question. <span class="FV">FVA</span> is the future value of the annuity payments. The question asks "how much is the annuity worth at the end", so this must be the unknown variable. This means <span class="FV math">FV</span> = ?.</p>
+
+                                <p><span class="yrs">n</span> is the measure of time in years. In other problems, you might see n expressed as a number or as a noun like decade or century. This means <span class="yrs math">n</span> = 3.</p>
+
+                                <p><span class="CF">CF</span> is the value of the regularly scheduled cash flow. This means <span class="CF math">CF</span> = $10.</p>
+
+                                <p><span class="cmpd">m</span> is the number of times interest is compounded per year. Adverbs like semi-annually, quarterly, monthly, or daily are often clues. In this case, its monthly, which is 12 times per year. <span class="cmpd">m</span> = 12.</p>
+
+                                <p><span class="int">i</span> is the rate of return. The % is an indicator of interest. This means that <span class="int math">i</span> = 10%. Generally, this number is converted to a decimal for use in equations. 10% is the same as .10.</p>
+
+                                <p class="question">How much is <span class="FV">an annuity worth at the end</span> of <span class="yrs">three years</span> if it <span class="CF">pays $10</span> <span class="cmpd">per month</span> at the end of each month assuming <span class="int">10% interest</span>?
+                                    <div class="math">
+                                        <span class="FV">FV</span> = ?<br>
+                                        <span class="yrs">n</span> = 3<br>
+                                        <span class="CF">CF</span> = 100<br>
+                                        <span class="int">i</span> = 10% &rarr; .10
+                                    </div>
+                                </p>
+
+                                <hr>
+                                <br>
+                            </div>
+                            <div>
+                            </div>
+                            <h4>Plug the Variables into the Equation</h4>
+                            <p>Once you have identified the variables, plug the numbers you've identified into the equation.</p>
+                            <div class="text-center">
+                                <img src="./images/tvm3_example3.png" class="img-fluid img-math" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 col-sm-3">
+                        <div class="pageNumber">Help 3</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ********** end help 3 ************************ -->
+
+
+
+            <!---------------- SLIDE 20  - CONTENT -->
+            <div id="slide20" class="slide">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Ordinary Annuity</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <p class="question">How much is an annuity worth at the end of three years if it pays $10 per month at the end of each month assuming 10% interest?</p>
+                            <p class="answer">FVA = $417.99</p>
+                            <p>Did you get the answer right? If not, please click on Help to see how to calculate the problem. If you answered correctly, please click Continue.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back help btn">Help</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 col-sm-1">
+                        <div class="pageNumber">20</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!---------------- SLIDE 21  - CONTENT -->
+            <div id="slide21" class="slide">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Annuities with Compound Interest</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <p>In general, the FVA of an annuity will be higher if payments are split into smaller pieces and paid more often?</p>
+                            <p>For instance, homeowners sometimes save money by paying half the mortgage payment every two weeks, instead of the full amount on a monthly basis.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back help btn">Help</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 col-sm-1">
+                        <div class="pageNumber">21</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- ***************** exercises ********************* -->
+            <!-- exercise intro slide -->
+            <div id="exercises3-slide1" class="slide exercises">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Exercises</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <h3>Exercises</h3>
+                            <p>Now you'll have a chance to try some exercises on your own. For these individual exercises, do not use the TVM buttons on your financial calculator unless instructed to do so.</p>
+                            <p class="note">Include dollars and cents on each answer. Do not include commas or dollar signs. A properly formatted answer looks like: <b>1150.38</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn hide">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 col-sm-1">
+                        <div class="pageNumber">1</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- exercises3 slide 2  : problem 1 -->
+            <div id="exercises3-slide2" class="slide exercises">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Exercises</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <!-- Exercises -->
+                            <h4>Identify the Variables</h4>
+                            <p>Enter the value of each variable in the boxes below. Leave the unknown variable blank. Then submit your answer.</span></p>
+                            <p class="question">If I save $1200 per year in an account that earns 8% interest (annually compounded) for 20 years, how much should my account be worth?</p>
+                            <div class="container">
+                                <div class="">
+                                    <form action="" class="indent">
+
+                                        <label><span class="FV">FVA</span> </label>
+                                        <input id="fv-ex1" type="number" placeholder="0"><br>
+
+                                        <label><span class="CF">CF</span> </label>
+                                        <input id="cf-ex1" type="number" placeholder="0"><br>
+
+                                        <label>&nbsp;&nbsp;&nbsp;<span class="int">i </span></label>
+                                        <input id="int-ex1" type="number" placeholder="0.00"><br>
+
+                                        <label>&nbsp;&nbsp;<span class="yrs">n</span> </label>
+                                        <input id="yrs-ex1" type="number" placeholder="0"><br>
+
+                                        <label>&nbsp;<span class="cmpd">m</span> </label>
+                                        <input id="cmpd-ex1" type="number" placeholder="0"><br>
+
+                                    </form>
+                                    <button onclick="exercise_1()" type="button" class="btn calculateBtn">Submit</button>
+                                </div>
+                                <br>
+                                <div class="answer" id="answer-ex1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn hide">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-5">
+                        <div class="pageNumber">2 <span class="note">&nbsp;(Question 1 of 6)</span></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- exercises3 slide 3 - problem 1 answer  -->
+            <div id="exercises3-slide3" class="slide exercises">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Exercises</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <!-- Help -->
+                            <h4>Solution</h4>
+                            <p class="question">If I save $1200 per year in an account that earns 8% interest (annually compounded) for 20 years, how much should my account be worth?</p>
+                            <p>Variables:</p>
+                            <p class="math">
+                                <span class="FVA">FV</span> = ? <br>
+                                <span class="CF">CF</span> = 1200 <br>
+                                <span class="int">i</span> = 8% &xrarr; 0.08<br>
+                                <span class="yrs">n</span> = 20<br>
+                                <span class="cmpd">m</span> = 1
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn hide">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-3">
+                        <div class="pageNumber">3</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- exercises3-slide4 : problem 2 -->
+            <div id="exercises3-slide4" class="slide exercises">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Exercises</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <!-- Exercises -->
+                            <h4>Calculate the Unknown Variable</h4>
+                            <p class="question">If I save $1200 per year in an account that earns 8% interest (annually compounded) for 20 years, how much should my account be worth?</p>
+                            <div class="container">
+                                <div class="">
+                                    <form action="" class="indent">
+                                        <label><span class="FV">FVA</span> </label>
+                                        $<input id="fv-ex2" type="number" placeholder="0"><br>
+                                    </form>
+                                    <button onclick="exercise_2()" type="button" class="btn calculateBtn">Submit</button>
+                                </div>
+                                <br>
+                                <div class="answer" id="answer-ex2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn hide">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-5">
+                        <div class="pageNumber">4 <span class="note">&nbsp;(Question 2)</span></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- exercises3-slide5 : answer problem 2 -->
+            <div id="exercises3-slide5" class="slide exercises">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Exercises</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <!-- Help -->
+                            <h4>Solution</h4>
+                            <p class="question">If I save $1200 per year in an account that earns 8% interest (annually compounded) for 20 years, how much should my account be worth?</p>
+                            <br>
+                            <p>Variables:</p>
+                            <p class="math"><span class="FV">FVA</span> = ?<br>
+                                <span class="CF">CF</span> = 1200<br>
+                                <span class="int">i</span> = 0.08<br>
+                                <span class="yrs">n</span> = 20<br>
+                                <span class="cmpd">m</span> = 1</p>
+
+                            <p>Plug the numbers into the equation:</p>
+                            <p class="text-center">
+                                <img src="./images/tvm3_exercise1_solution.png" class="img-fluid img-math" alt="">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn hide">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-3">
+                        <div class="pageNumber">5</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- exercises3-slide6 :  problem 3 -->
+            <div id="exercises3-slide6" class="slide exercises">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Exercises</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <!-- Exercises -->
+                            <h4>Identify the Variables</h4>
+                            <p>Enter the value of each variable in the boxes below. Leave the box for the unknown variable blank.</p>
+                            <p class="question">If I save $100 per month in an account earning a nominal rate of 8% per year for 20 years, how much should the account be worth?</p>
+                            <div class="container">
+                                <div class="">
+                                    <form action="" class="indent">
+                                        <label><span class="FV">FVA</span> </label>
+                                        <input id="fv-ex3" type="number" placeholder="000"><br>
+                                        <label><span class="CF">CF</span> </label>
+                                        <input id="cf-ex3" type="number" placeholder="0"><br>
+                                        <label>&nbsp;&nbsp;&nbsp;<span class="int">i </span></label>
+                                        <input id="int-ex3" type="number" placeholder=".00"><br>
+                                        <label>&nbsp;&nbsp;<span class="yrs">n</span> </label>
+                                        <input id="yrs-ex3" type="number" placeholder="0"><br>
+                                        <label>&nbsp;<span class="cmpd">m</span> </label>
+                                        <input id="cmpd-ex3" type="number" placeholder="0"><br>
+                                    </form>
+                                    <button onclick="exercise_3()" type="button" class="btn calculateBtn">Submit</button>
+                                </div>
+                                <br>
+                                <div class="answer" id="answer-ex3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn hide">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-5">
+                        <div class="pageNumber">6 <span class="note">&nbsp;(Question 3)</span></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- exercises3-slide7 :  answer problem 3 -->
+            <div id="exercises3-slide7" class="slide exercises">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Exercises</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <h4>Solution</h4>
+                            <p class="question">If I save $100 per month in an account earning a nominal rate of 8% per year for 20 years, how much should the account be worth?</p>
+                            <h5>Variables:</h5>
+                            <p class="math"><span class="FV">FVA</span> = ?<br>
+                                <span class="CF">CF</span> = 100<br>
+                                <span class="int">i</span> = 8% or 0.08<br>
+                                <span class="yrs">n</span> = 20<br>
+                                <span class="cmpd">m</span> = 12</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn hide">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-3">
+                        <div class="pageNumber">7</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- exercises3-slide8 :   problem 4 -->
+            <div id="exercises3-slide8" class="slide exercises">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Exercises</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <!-- Exercises -->
+                            <h4>Calculate the Unknown Variable</h4>
+                            <p class="question">If I save $100 per month in an account earning a nominal rate of 8% per year for 20 years, how much should the account be worth?</p>
+                            <div class="container">
+                                <div class="">
+                                    <form action="" class="indent">
+                                        <label><span class="FV">FVA</span> </label>
+                                        $<input id="fv-ex4" type="number" placeholder="0.00"><br>
+                                    </form>
+                                    <button onclick="exercise_4()" type="button" class="btn calculateBtn">Submit</button>
+                                </div>
+                                <br>
+                                <div class="answer" id="answer-ex4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn hide">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-5">
+                        <div class="pageNumber">8 <span class="note">&nbsp;(Question 4)</span></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- exercises3-slide9 :   answer problem 4 -->
+            <div id="exercises3-slide9" class="slide exercises">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Exercises</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <h4>Solution</h4>
+                            <p class="question">If I save $100 per month in an account earning a nominal rate of 8% per year for 20 years, how much should the account be worth?</p>
+                            <p>Variables:</p>
+                            <p class="math">
+                                <span class="FV">FVA</span> = ?<br>
+                                <span class="CF">CF</span> = 100<br>
+                                <span class="int">i</span> = 0.08<br>
+                                <span class="yrs">n</span> = 20<br>
+                                <span class="cmpd">m</span> = 12</p>
+
+                            <p>Plug the numbers into the equation:</p>
+                            <p class="text-center">
+                                <img src="./images/tvm3_exercise2_solution.png" class="img-fluid img-math" alt="">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn hide">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-3">
+                        <div class="pageNumber">9</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- exercises3-slide10 : problem 5  -->
+            <div id="exercises3-slide10" class="slide exercises">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Exercises</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <!-- Exercises -->
+                            <h4>Identify the Variables</h4>
+                            <p>Enter the value of each variable in the boxes below. Leave the unknown variable blank.</p>
+                            <p class="question">What if I deposited the $1200 a year at the beginning of the year for 20 years earning 8% interest? How much would the account be worth? <span class="note">(Hint: as an ordinary annuity, it was worth $54,914.36).</span></p>
+                            <div class="container">
+                                <div class="">
+                                    <form action="" class="indent">
+                                        <label><span class="FV">FVA</span> </label>
+                                        $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                    </form>
+                                    <button onclick="exercise_5()" type="button" class="btn calculateBtn">Submit</button>
+                                </div>
+                                <br>
+                                <div class="answer" id="answer-ex5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn hide">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-5">
+                        <div class="pageNumber">10 <span class="note">&nbsp;(Question 5)</span></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- exercises3-slide11 :   answer problem 5 -->
+            <div id="exercises3-slide11" class="slide exercises">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Exercises</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <h4>Solution</h4>
+                            <p class="question">What if I deposited the $1200 a year at the beginning of the year for 20 years earning 8% interest? How much would the account be worth? <span class="note">(Hint: as an ordinary annuity, it was worth $54,914.36).</span></p>
+                            <p>To convert from an ordinary annuity to an annuity due, every payment receives an extra period of interest. Use the general form of the TVM equation to add 1 year of interest.</p>
+                            <div class="text-center">
+                                <img src="./images/tvm3_exercise3_timeline.png" class="img-fluid img-math" alt="">
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6">
+                                    <div class="math" style="margin-left: 30px;">
+                                        <span class="PV">PV</span> = $54,914.36<br>
+                                        <span class="FV">FV</span> = ?<br>
+                                        <span class="int">i</span> = 0.08<br>
+                                        <span class="yrs">n</span> = 1<br>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6">
+                                    <div class="text-center">
+                                        <img src="./images/tvm3_exercise3_solution.png" class="img-fluid img-math" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn hide">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn hide">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-3">
-                    <div class="pageNumber">11</div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <!-- exercises3-slide12 : problem 6  -->
-        <div id="exercises3-slide12" class="slide exercises">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Exercises</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <!-- Exercises -->
-                        <h4>Identify the Variables</h4>
-                        <p>Enter the value of each variable in the boxes below. Leave the unknown variable blank.</p>
-                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
-                        <div class="container">
-                            <div class="">
-                                <form action="" class="indent">
-                                    <label><span class="FV">FVA</span> of the weekly option:</label>
-                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
-
-                                    <label><span class="FV">FVA</span> of the bi-weekly option:</label>
-                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
-
-                                    <label><b>Difference in values</b>:</label>
-                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
-                                </form>
-                                <button onclick="exercise_6()" type="button" class="btn calculateBtn">Submit</button>
-                            </div>
-                            <br>
-                            <div class="answer" id="answer-ex6"></div>
-                        </div>
+                <div class="row">
+                    <div class="col-12 col-sm-3">
+                        <div class="pageNumber">11</div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn hide">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-5">
-                    <div class="pageNumber">12 <span class="note">&nbsp;(Question 6)</span></div>
-                </div>
-            </div>
-        </div>
 
 
 
-        <!-- exercises3-slide13 :   answer problem 6 -->
-        <div id="exercises3-slide13" class="slide exercises">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Exercises</h3>
+            <!-- exercises3-slide12 : problem 6  -->
+            <div id="exercises3-slide12" class="slide exercises">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Exercises</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <h4>Solution, Part 1</h4>
-                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
-                        <p>First, calculate the FVA of the quarterly option:</p>
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-6">
-                                <p class="math" style="margin-left: 30px;"><br>
-                                    <b>The quarterly option:</b><br>
-                                    <span class="FV">FVA</span> = ?<br>
-                                    <span class="CF">CF</span> = 500<br>
-                                    <span class="int">i</span> = 0.06<br>
-                                    <span class="yrs">n</span> = 10<br>
-                                    <span class="cmpd">m</span> = 4<br>
-                                </p>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6">
-                                <p class="text-center">
-                                    <img src="./images/tvm3_exercise4a_solution.png" class="img-fluid img-math" alt="">
-                                </p>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <!-- Exercises -->
+                            <h4>Identify the Variables</h4>
+                            <p>Enter the value of each variable in the boxes below. Leave the unknown variable blank.</p>
+                            <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+                            <div class="container">
+                                <div class="">
+                                    <form action="" class="indent">
+                                        <label><span class="FV">FVA</span> of the weekly option:</label>
+                                        $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+
+                                        <label><span class="FV">FVA</span> of the bi-weekly option:</label>
+                                        $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+
+                                        <label><b>Difference in values</b>:</label>
+                                        $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                    </form>
+                                    <button onclick="exercise_6()" type="button" class="btn calculateBtn">Submit</button>
+                                </div>
+                                <br>
+                                <div class="answer" id="answer-ex6"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn hide">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn hide">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-5">
+                        <div class="pageNumber">12 <span class="note">&nbsp;(Question 6)</span></div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-sm-3">
-                    <div class="pageNumber">13</div>
-                </div>
-            </div>
-        </div>
 
 
 
-        <!-- exercises3-slide14 :   answer problem 6 -->
-        <div id="exercises3-slide14" class="slide exercises">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Exercises</h3>
+            <!-- exercises3-slide13 :   answer problem 6 -->
+            <div id="exercises3-slide13" class="slide exercises">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Exercises</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <h4>Solution, Part 2</h4>
-                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
-                        <p>Next, calculate the FVA of the semi-annual option:</p>
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-6">
-                                <p class="math" style="margin-left: 30px;"><br>
-                                    <b>The semi-annual option:</b><br>
-                                    <span class="FV">FVA</span> = ?<br>
-                                    <span class="CF">CF</span> = 1000<br>
-                                    <span class="int">i</span> = 0.06<br>
-                                    <span class="yrs">n</span> = 10<br>
-                                    <span class="cmpd">m</span> = 2<br>
-                                </p>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6">
-                                <p class="text-center">
-                                    <img src="./images/tvm3_exercise4b_solution.png" class="img-fluid img-math" alt="">
-                                </p>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <h4>Solution, Part 1</h4>
+                            <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+                            <p>First, calculate the FVA of the quarterly option:</p>
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6">
+                                    <p class="math" style="margin-left: 30px;"><br>
+                                        <b>The quarterly option:</b><br>
+                                        <span class="FV">FVA</span> = ?<br>
+                                        <span class="CF">CF</span> = 500<br>
+                                        <span class="int">i</span> = 0.06<br>
+                                        <span class="yrs">n</span> = 10<br>
+                                        <span class="cmpd">m</span> = 4<br>
+                                    </p>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6">
+                                    <p class="text-center">
+                                        <img src="./images/tvm3_exercise4a_solution.png" class="img-fluid img-math" alt="">
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn hide">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn hide">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-3">
+                        <div class="pageNumber">13</div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-sm-3">
-                    <div class="pageNumber">14</div>
-                </div>
-            </div>
-        </div>
 
 
 
-        <!-- exercises3-slide15 :   answer problem 6 -->
-        <div id="exercises3-slide15" class="slide exercises">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Exercises</h3>
+            <!-- exercises3-slide14 :   answer problem 6 -->
+            <div id="exercises3-slide14" class="slide exercises">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Exercises</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <h4>Solution, Part 2</h4>
+                            <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+                            <p>Next, calculate the FVA of the semi-annual option:</p>
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6">
+                                    <p class="math" style="margin-left: 30px;"><br>
+                                        <b>The semi-annual option:</b><br>
+                                        <span class="FV">FVA</span> = ?<br>
+                                        <span class="CF">CF</span> = 1000<br>
+                                        <span class="int">i</span> = 0.06<br>
+                                        <span class="yrs">n</span> = 10<br>
+                                        <span class="cmpd">m</span> = 2<br>
+                                    </p>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6">
+                                    <p class="text-center">
+                                        <img src="./images/tvm3_exercise4b_solution.png" class="img-fluid img-math" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn hide">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-3">
+                        <div class="pageNumber">14</div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <h4>Solution, Part 3</h4>
-                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
-                        <p>After finding the individual FVA values, then subtract the difference to calculate how much more the quarterly option earns:</p>
+
+
+
+            <!-- exercises3-slide15 :   answer problem 6 -->
+            <div id="exercises3-slide15" class="slide exercises">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Exercises</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <h4>Solution, Part 3</h4>
+                            <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+                            <p>After finding the individual FVA values, then subtract the difference to calculate how much more the quarterly option earns:</p>
                             <div class="col-12 col-sm-12">
                                 <p class="text-center">
                                     <img src="./images/tvm3_exercise4c_solution.png" class="img-fluid img-math" alt="">
                                 </p>
                             </div>
-                        
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn hide">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-3">
+                        <div class="pageNumber">15</div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn hide">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
+
+
+
+
+            <!-- exercises3-slide16  -->
+            <div id="exercises3-slide16" class="slide">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Conclusion</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-3">
-                    <div class="pageNumber">15</div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <h3>Congratulations!</h3>
+                            <p>You’ve completed the Compounding section of the TVM Tutorial. If you were confident answering the exercise questions and got most of them right, then you have a good grasp of the basics of TVM with cash flows. If you were not able to answer most of the exercise questions correctly, contact your instructor for additional help. If you’re completing the full series of TVM tutorials, move on to the fourth Time Value of Money tutorial, which introduces Present Value of Annuities.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-
-
-
-        <!-- exercises3-slide16  -->
-        <div id="exercises3-slide16" class="slide">
-            <div class="row slideTitle">
-                <div class="col-12 col-sm-12">
-                    <h2 class="primaryTitle">TVM: Cash Flows</h2>
-                    <h3 class="secondaryTitle">Conclusion</h3>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <button type="button" class="back btn hide">Back</button>
+                        <button type="button" class="continue btn hide">Continue</button>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="content">
-                        <h3>Congratulations!</h3>
-                        <p>You’ve completed the Compounding section of the TVM Tutorial. If you were confident answering the exercise questions and got most of them right, then you have a good grasp of the basics of TVM with cash flows. If you were not able to answer most of the exercise questions correctly, contact your instructor for additional help. If you’re completing the full series of TVM tutorials, move on to the fourth Time Value of Money tutorial, which introduces Present Value of Annuities.</p>
+                <div class="row">
+                    <div class="col-12 col-sm-5">
+                        <div class="pageNumber">16</div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn hide">Back</button>
-                    <button type="button" class="continue btn hide">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-5">
-                    <div class="pageNumber">16</div>
-                </div>
-            </div>
-        </div>
-        <!-- *************************** end exercises *************************** -->
+            <!-- *************************** end exercises *************************** -->
 
 
-    </div> <!-- End of allSlides div -->
+        </div> <!-- End of allSlides div -->
     </div> <!--  end of container -->
 
 
@@ -1850,7 +1833,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <script src="tvm3-script.js"></script>
+    <script src="tvm4-script.js"></script>
 </body>
 
 </html>
