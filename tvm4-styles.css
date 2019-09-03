@@ -50,6 +50,9 @@ body {
     .space {
         margin: 40px;
     }
+    .bottomSpace {
+        margin-bottom: 40px;
+    }
     .pageNumber {
         margin: 20px;
     }
@@ -220,9 +223,9 @@ body {
         width: 30%;
         margin-left: 15%;
     }
-    .img-math {
+    /* .img-math {
         max-width: 400px;
-    }
+    } */
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -233,9 +236,9 @@ body {
     .calculateBtn {
         width: 25%;
     }
-    .img-math {
+    /* .img-math {
         max-width: 350px;
-    }
+    } */
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -250,9 +253,9 @@ body {
         width: 20%;
         margin-left: 10%;
     }
-    .img-math {
+    /* .img-math {
         max-width: 500px;
-    }
+    } */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

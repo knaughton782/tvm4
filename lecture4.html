@@ -303,25 +303,28 @@
                                 </div>
                             </p>
                             <p class="question">What's the PV of an ordinary annuity that pays $100 per year for 3 years at 10% interest?</p>
-                            <div class="text-center">
-                                <img src="./images/pv_ordinary_annuity_timeline.png" class="img-fluid img-math" alt="">
+                            <div class="text-center bottomSpace">
+                                <img src="./images/pv_ordinary_annuity_timeline.png" class="img-fluid" alt=""><br>
                             </div>
-                            <p>Calculate the PV of each of the 3 payments separately and then add them together to get the PV of the annuity.
-                                <div class="row">
+                            <p>First, calculate the PV of each of the 3 payments separately.
+                                <div class="row bottomSpace">
                                     <div class="col-12 col-sm-12 col-md-4">
-                                        <img src="./images/" class="img-fluid img-math" alt="">
+                                        <p><b>PV of Payment 1</b></p>
+                                        <img src="./images/pv_ordinary_annuity_pmt1.png" class="img-fluid img-math" alt="">
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-4">
-                                        <img src="./images/" class="img-fluid img-math" alt="">
+                                        <p><b>PV of Payment 2</b></p>
+                                        <img src="./images/pv_ordinary_annuity_pmt2.png" class="img-fluid img-math" alt="">
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-4">
-                                        <img src="./images/" class="img-fluid img-math" alt="">
+                                        <p><b>PV of Payment 3</b></p>
+                                        <img src="./images/pv_ordinary_annuity_pmt3.png" class="img-fluid img-math" alt="">
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-12 col-sm-12">
-                                        <img src="./images/pva_equals_sum_of_pv.png" class="img-fluid img-math" alt="">
-                                    </div>
+                                <br>
+                                <p>Then add the 3 payments together to get the PV of the annuity.</p>
+                                <div class="text-center">
+                                    <img src="./images/pva_equals_sum_of_pv.png" class="img-fluid" alt="">
                                 </div>
                             </p>
                         </div>
@@ -354,23 +357,111 @@
                 <div class="row">
                     <div class="col-12 col-sm-12">
                         <div class="content">
-                            <h3>Annuities</h3>
+                            <p>The method of calculating the PV of individual payments and summing them to find the Present Value of an Annuity (PVA) does work.</p>
+                            <p>However, could you imagine calculating the PVA of an annuity with hundreds of payments? The process would be both tedious and present many opportunities to make rounding or calculation errors.</p>
+                            <p>Instead, we'll use a PVA equation (that can be derived from the basic form of the TVM equation):
+                                <div class="text-center">
+                                    <img src="./images/pva_general_equation.png" class="img-fluid img-math" alt="">
+                                </div>
+                            </p>
+                            <p>Remember when applying the PVA equation that annuities pay a specific number of equally-sized payments at regularly scheduled intervals. Let's try the same problem again, this time using the PVA equation.
+                            </p>
+                            <p class="question">What's the PV of an ordinary annuity that pays $100 per year for 3 years at 10% interest?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                        <!-- to help 1 -->
+                        <button type="button" class="continue help btn">Help</button>
+                        <button type="button" class="skip btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 col-sm-1">
+                        <div class="pageNumber">8</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!---------------- help 1 --------------->
+            <div id="tvm4-help1" class="slide helpSlide">
+                <div class="row slideTitle">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="primaryTitle">TVM: Annuities</h2>
+                        <h3 class="secondaryTitle">Help Me!</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="content">
+                            <h4>Identify the Basic Variables</h4>
+                            <p class="question">What's the PV of an ordinary annuity that pays $100 per year for 3 years at 10% interest?</p>
+
+                            <p>Let's break down the question. <span class="PV">PVA</span> is the value of the annuity in today's dollars. This is the variable we must calculate.</p>
+
+                            <p><span class="yrs">n</span> is the measure of time in years. In other problems, you might see n expressed as a number or as a noun like decade or century. This means <span class="yrs math">n</span> = 3.</p>
+
+                            <p><span class="CF">CF</span> is the value of the regularly scheduled cash flow or payment. This means <span class="CF math">CF</span> = $100.</p>
+
+                            <p><span class="int">i</span> is the rate of return. The % is an indicator of interest. This means that <span class="int math">i</span> = 10%. Generally, this number is converted to a decimal for use in equations. 10% is the same as .10.</p>
+
+                            <p class="question"><span class="PV">What's the PV of an ordinary annuity</span> that pays <span class="CF">$100 per year</span> for <span class="yrs">3 years</span> at <span class="int">10% interest</span>?
+                                <div class="math">
+                                    <span class="PV">PVA</span> = ?<br>
+                                    <span class="yrs">n</span> = 3<br>
+                                    <span class="CF">CF</span> = 100<br>
+                                    <span class="int">i</span> = 10% &rarr; .10
+                                </div>
+                            </p>
+
                             <hr>
-                            <h5>An annuity is a regularly-scheduled, equal-sized cash flows over a specified, finite period of time.</h5>
-                            <p>To break that down:
-                                <ul>
-                                    <li><span class="alert">equal-sized:</span> every payment is the same amount</li>
-                                    <li><span class="alert">regularly-scheduled:</span> payments are received at regular intevals (e.g., monthly, annually, or bi-weekly)</li>
-                                    <li><span class="alert">specified priod:</span> when the term ends, payments stop</li>
-                                </ul>
-                                Annuities are similar to perpetuities except that annuities cease after a specific number of payments.
-                                <ul>
-                                    <li>Mortgages</li>
-                                    <li>Car loans, Credit cards, and other loans</li>
-                                    <li>Automatic contributions from your paycheck to a retirement account (e.g., 401k)</li>
-                                    <li>A bond with coupon payments</li>
-                                </ul>
-                                At some point in your life, you will have one, if not all, of the annuities listed above. Therefore, you will find TVM with cash flows very useful in personal and professional decision making.</p>
+                            <br>
+                            <h4>Plug the Variables into the Equation</h4>
+                            <p>Once you have identified the variables, plug the numbers you've identified into the equation. Remember to use the equation that we have modified to include compounding.</p>
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6">
+                                    <div class="math">
+                                        <span class="PV">PVA</span> = ?<br>
+                                        <span class="yrs">n</span> = 3<br>
+                                        <span class="CF">CF</span> = 100<br>
+                                        <span class="int">i</span> = 10% &rarr; .10
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6">
+                                    <div class="math">
+                                        <img src="./images/pva_general_equation.png" class="img-fluid img-math" alt="">
+                                    </div>
+                                    <div class="math">
+                                        <img src="./images/tvm4_pva_example1_help_fill_in_variables.png" class="img-fluid img-math" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr>
+                            <br>
+                            <h4>Performing the Algebra</h4>
+                            <p>Once you have plugged the variables into the equation, solve using the order of operations. Remember the acronym <b>PEMDAS</b>. Start with parentheses and then exponents. Then perform (from left to right) multiplication and division. Finally, add and subtract (from left to right).</p>
+                            <ul>
+                                <li><b>P</b>: Start with the numbers in parentheses. Since brackets function like parentheses, we will work on all the math inside the brackets before moving outside the brackets.<br>
+                                    <img src="./images/tvm4_pva_example1_help_part1.png" class="img-fluid img-math" alt=""></li>
+                                <li><b>E</b>: Raise the number within the parentheses to the exponent.<br>
+                                    <img src="./images/tvm4_pva_example1_help_part2.png" class="img-fluid img-math" alt=""><br>
+                                    <span class="note">Note: If you are using a calculator, it will be helpful to know that exponents in the denominator can be brought up to the numberator by switching the sign (+/-).</span><br>
+                                    <img class="img-fluid math-fluid" src="./images/tvm4_pva_example1_help_exponent_in_fraction.png" alt=""></li>
+                                <li><b>MD</b>: Simplify the embedded fraction.<br>
+                                    <img src="./images/tvm4_pva_example1_help_part3.png" class="img-fluid img-math" alt=""></li>
+                                <li><b>AS</b>: Subtract.<br>
+                                    <img src="./images/tvm4_pva_example1_help_part4.png" class="img-fluid img-math" alt=""></li>
+                                <li><b>P</b>: As pointed out before, brackets function like parentheses. Therefore, we'll simplify the fraction within the brackets next.<br>
+                                    <img src="./images/tvm4_pva_example1_help_part5.png" class="img-fluid img-math" alt=""></li>
+                                <li><b>MD</b>: Multiply the remaining numbers to find PVA.<br>
+                                    <img src="./images/tvm4_pva_example1_help_part6.png" class="img-fluid img-math" alt=""></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -381,11 +472,12 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-1 col-sm-1">
-                        <div class="pageNumber">8</div>
+                    <div class="col-5 col-sm-3">
+                        <div class="pageNumber">Help 1</div>
                     </div>
                 </div>
             </div>
+            <!---------------- end help 1 --------------->
 
 
 
@@ -400,25 +492,16 @@
                 <div class="row">
                     <div class="col-12 col-sm-12">
                         <div class="content">
-                            <p>There are two types of annuities:
-                                <ul>
-                                    <li>Regular Annuity, also known as an Ordinary Annuity</li>
-                                    <li>Annuity Due</li>
-                                </ul>
-                            </p>
-                            <p>The difference is in the timing of cash flows.
-                                <ul>
-                                    <li>Regular annuity: cash flow arrives at the <span class="alert">end</span> of each period</li>
-                                    <li>Annuity due: cash flow arrives at the <span class="alert">beginning</span> of each period</li>
-                                </ul>
-                            </p>
-                            <p>If the problem does not specifiy whether you are dealing with a regular annuity or an annuity due, or if it doesn't state when payments are made, <b>assume that it is a regular annuity</b>.</p>
+                            <p class="question">What's the PV of an ordinary annuity that pays $100 per year for 3 years at 10% interest?</p>
+                            <p class="answer">The answer is<br>
+                                <img src="./images/tvm4_pva_example1_answer.png" class="img-fluid img-math" alt=""></p>
+                                <p>Click Help if you don't understand how to calculate the answer. If you got the right answer, click Continue.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="back help btn">Help</button>
                         <button type="button" class="continue btn">Continue</button>
                     </div>
                 </div>
@@ -433,7 +516,7 @@
 
 
             <!---------------- SLIDE 10 - CONTENT *********** -->
-            <div id="slide10" class="slide">
+            <div id="slide10" class="slide stop">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: Annuities</h2>
@@ -443,38 +526,18 @@
                 <div class="row">
                     <div class="col-12 col-sm-12">
                         <div class="content">
-                            <h5>Why does the timing of the cash flows matter? Look at the timelines of a regular annuity or an annuity due:</h5>
-                            <p>
-                                <div class="text-center">
-                                    <img src="./images/tvm3_annuity_regular_vs_due.png" class="img-fluid img-math" alt="">
-                                </div>
-                                As you can see, the annuity due pays an extra period of interest on each payment. The extra interest results in a higher Future Value for an annuity due, as compared to an ordinary annuity.
-                            </p><br>
-                            <div class="row">
-                                <div class="col-12 col-sm-12">
-                                    <h5>Think about annuities in your own life and the timing of the payments.</h5>
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-6">
-                                    <p>
-                                        <h6>Examples of Ordinary Annuities</h6>
-                                        <ul>
-                                            <li>Credit Card payments</li>
-                                            <li>Direct Deposits in Retirement Accounts</li>
-                                        </ul>
-                                    </p>
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-6">
-                                    <p>
-                                        <h6>Examples of Annuities due</h6>
-                                        <ul>
-                                            <li>Property rents/leases are due at the beginning of the month</li>
-                                            <li>Insurance Premiums are due up front</li>
-                                        </ul>
-
-                                    </p>
-                                </div>
-                                <b>Most annuities are ordinary annuities.</b>
+                           <p>A PVA Factor table can also be used to find PVA. The PVA Factor replaces the number within the brackets.<br>
+                        <img src="./images/tvm4_pva_factor.png" class="img-fluid img-math" alt=""></p>
+                        <p>Locate the intersection of the n (at left) and i (at top) to find the PVA Factor. Then multiply the PVA Factor by CF to calculate PVA.</p>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <img src="./images/tvm4_pva_factor_table.jpg" class="img-fluid img-math" alt="">
                             </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <br>
+                                <img src="./images/tvm4_pva_factor_calculation.png" class="img-fluid img-math" alt="">
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -530,7 +593,6 @@
                 </div>
                 <div class="row">
                     <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                        <!-- to help 1 -->
                         <button type="button" class="continue help btn">Help</button>
                         <button type="button" class="skip btn">Continue</button>
                     </div>
@@ -544,55 +606,7 @@
 
 
 
-            <!---------------- help 1 --------------->
-            <div id="tvm3-help1" class="slide helpSlide">
-                <div class="row slideTitle">
-                    <div class="col-12 col-sm-12">
-                        <h2 class="primaryTitle">TVM: Annuities</h2>
-                        <h3 class="secondaryTitle">Help Me!</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-sm-12">
-                        <div class="content">
-                            <h3>Calculating the FV of Lump Sums</h3>
-                            <p class="question">If you plan to deposit $100 at the end of each year for 3 years, how much will you have in 3 years?</p>
-                            <h5>Use the general format of the TVM equation to perform the calculations:</h5>
-                            <div class="row">
-                                <div class="col-12 col-sm-12 col-md-6">
-                                    <img src="./images/tvm_basic_equation.png" class="img-fluid img-math" alt="">
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-6">
-                                    <img src="./images/tvm3_example_1_ordinary_annuity.png" class="img-fluid img-math" alt="">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-sm-12 col-md-4">
-                                    <img src="./images/tvm3_example1_lumpsum1.png" class="img-fluid math-img" alt="">
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-4">
-                                    <img src="./images/tvm3_example1_lumpsum2.png" class="img-fluid math-img" alt="">
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-4">
-                                    <img src="./images/tvm3_example1_lumpsum3.png" class="img-fluid math-img" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                        <button type="button" class="back btn">Back</button>
-                        <button type="button" class="continue btn">Continue</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-5 col-sm-3">
-                        <div class="pageNumber">Help 1</div>
-                    </div>
-                </div>
-            </div>
-            <!---------------- end help 1 --------------->
+
 
 
 
@@ -684,71 +698,7 @@
 
 
 
-            <!---------------- help 2 --------------->
-            <div id="tvm3-help2" class="slide helpSlide">
-                <div class="row slideTitle">
-                    <div class="col-12 col-sm-12">
-                        <h2 class="primaryTitle">TVM: Annuities</h2>
-                        <h3 class="secondaryTitle">Help Me!</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-sm-12">
-                        <div class="content">
-                            <h4>Identify the Basic Variables (<span class="FV">FVA</span>, <span class="CF">CF</span>, <span class="int">i</span>, <span class="yrs">n</span>)</h4>
-                            <p class="question">How much is an annuity worth at the end of three years if it pays $100 at the end of each year assuming 10% interest?</p>
-                            <p>Let's break down the question. <span class="FV">FVA</span> is the future value of the annuity payments. The question asks "how much is the annuity worth at the end", so this must be the unknown variable. This means <span class="FV math">FV</span> = ?.</p>
-                            <p><span class="yrs">n</span> is the measure of time in years. In other problems, you might see n expressed as a number or as a noun like decade or century. This means <span class="yrs math">n</span> = 3.</p>
-                            <p><span class="CF">CF</span> is the value of the regularly scheduled cash flow. This means <span class="CF math">CF</span> = $100.</p>
-                            <p><span class="int">i</span> is the rate of return. The % is an indicator of interest. This means that <span class="int math">i</span> = 10%. Generally, this number is converted to a decimal for use in equations. 10% is the same as .10.</p>
-                            <p class="question">How much is <span class="FV">an annuity worth at the end</span> of <span class="yrs">three years</span> if it <span class="CF">pays $100</span> at the end of each year assuming <span class="int">10% interest</span>?
-                                <div class="math">
-                                    <span class="FV">FV</span> = ?<br>
-                                    <span class="yrs">n</span> = 3<br>
-                                    <span class="CF">CF</span> = 100<br>
-                                    <span class="int">i</span> = 10% &rarr; .10
-                                </div>
-                            </p>
-                            <hr>
-                            <br>
-                            <h4>Plug the Variables into the Equation</h4>
-                            <p>Once you have identified the variables, plug the numbers you've identified into the equation.</p>
-                            <div class="row">
-                                <div class="col-12 col-sm-12 col-md-6">
-                                    <div class="math">
-                                        <span class="FV">FV</span> = ?<br>
-                                        <span class="yrs">n</span> = 3<br>
-                                        <span class="CF">CF</span> = 100<br>
-                                        <span class="int">i</span> = 10% &rarr; .10
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-6">
-                                    <div class="math">
-                                        <img src="./images/tvm3_fva_example1_help2.png" class="img-fluid img-math" alt="">
-                                    </div>
-                                </div>
 
-                            </div>
-                            <hr>
-                            <br>
-                            <h4>Calculating FVA</h4>
-                            <p>Once you have plugged the variables into the equation, solve using the order of operations. Remember the acronym <b>PEMDAS</b>. Start with parentheses and then exponents. Then perform (from left to right) multiplication and division. Finally, add and subtract (from left to right).</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                        <button type="button" class="back btn">Back</button>
-                        <button type="button" class="continue btn">Continue</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-5 col-sm-3">
-                        <div class="pageNumber">Help 2</div>
-                    </div>
-                </div>
-            </div>
-            <!---------------- end help 2 --------------->
 
 
 
