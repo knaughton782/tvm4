@@ -1003,13 +1003,15 @@
                                 <img src="./images/tvm4_combo_example3_pv_timeline.png" class="img-fluid img-math" alt="">
                             </div>
                         </p>
+                        <p>Work through the problem. Click the Help button if you get stuck. Click Continue when you have the answer.</p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back btn">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
+                    <!-- to help 3 -->
+                    <button type="button" class="continue help btn">Help</button>
+                    <button type="button" class="skip btn">Continue</button>
                 </div>
             </div>
             <div class="row">
@@ -1021,6 +1023,127 @@
 
 
 
+
+        <!-- ********** help 3 ************************ -->
+        <div id="tvm4-help3" class="slide helpSlide">
+            <div class="row slideTitle">
+                <div class="col-12 col-sm-12">
+                    <h2 class="primaryTitle">TVM: Annuities</h2>
+                    <h3 class="secondaryTitle">Help Me!</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <div class="content">
+                        <div>
+                            <h4>Identify the Basic Variables</h4>
+
+                            <p class="question">What would you pay for a bond that pays $45 every six months and also pays its maturity value of $1000 at the end of the 10 years, if you require an 8% return on your investment?</p>
+
+
+                            <p>Let's break down the question. <span class="PV">PVA</span> is the value of the annuity in today's dollars. This is the value we must calculate, therefore, <span class="PV math">PVA</span> = ?.</p>
+
+                            <p><span class="CF">CF</span> is the value of the regularly scheduled payment. <span class="CF math">CF</span> = $45.</p>
+
+                            <p><span class="cmpd">m</span> is the number of times interest is compounded per year. Adverbs like semi-annually, quarterly, monthly, or daily are often clues. In this case, its semi-annuallly, which is every six months or 2 times per year. <span class="cmpd math">m</span> = 2.</p>
+
+                            <p><span class="FV">FV</span> is the value of the lump sum paid on the bond's maturity date. <span class="FV math">FV</span> = $1000.</p>
+
+                            <p><span class="yrs">n</span> is the measure of time in years. In other problems, you might see n expressed as a number or as a noun like decade or century. Therefore, <span class="yrs math">n</span> = 10.</p>
+
+                            <p><span class="int">i</span> is the rate of return. The % is an indicator of interest. This means that <span class="int math">i</span> = 8%. Generally, this number is converted to a decimal for use in equations. 8% is the same as .09.</p>
+
+
+                            <p class="question"><span class="PV">What would you pay</span> for a bond that pays <span class="CF">$45</span> <span class="cmpd">every six months</span> and also pays its maturity value of <span class="FV">$1000</span> at the end of the <span class="yrs">10 years</span>, if you require an <span class="int">8%</span> return on your investment?</p>
+                            <div class="math">
+                                <span class="PV">PVA</span> = ?<br>
+                                <span class="CF">CF</span> = 45<br>
+                                <span class="cmpd">m</span> = 2<br>
+                                <span class="FV"></span>FV</span> = 1000<br>
+                                <span class="yrs">n</span> = 10<br>
+                                <span class="int">i</span> = 8% &rarr; .08
+                            </div>
+                            </p>
+
+                            <hr>
+                            <br>
+                        </div>
+                        <div>
+                            <h4>Plug the Variables into the Equation</h4>
+                            <p>Once you have identified the variables, plug the numbers you've identified into the equation. Recall the TVM equation that we modified to include compounding.</p>
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6">
+                                    <div class="math">
+                                        <b>Annuity</b><br>
+                                        <span class="PV">PVA</span> = ?<br>
+                                        <span class="CF">CF</span> = 45<br>
+                                        <span class="cmpd">m</span> = 2<br>
+                                        <span class="FV"></span>FV</span> = 1000<br>
+                                        <span class="yrs">n</span> = 10<br>
+                                        <span class="int">i</span> = 8% &rarr; .08
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="./images/pva_general_equation_with_compounding.png" class="img-fluid img-math" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="./images/tvm4_combo_example3_pva_fill_in_formula.png" class="img-fluid img-math" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6">
+                                    <div class="math">
+                                        <b>Lump Sum</b><br>
+                                        <span class="PV">PVA</span> = ?<br>
+                                        <span class="CF">CF</span> = 45<br>
+                                        <span class="cmpd">m</span> = 2<br>
+                                        <span class="FV"></span>FV</span> = 1000<br>
+                                        <span class="yrs">n</span> = 10<br>
+                                        <span class="int">i</span> = 8% &rarr; .08
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="./images/pva_general_equation_with_compounding.png" class="img-fluid img-math" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="./images/tvm4_combo_example3_pva_fill_in_formula.png" class="img-fluid img-math" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <hr>
+                            <br>
+                            <h4>Performing the Algebra</h4>
+                            <p>Once you have plugged the variables into the equation, solve using the order of operations. Remember the acronym <b>PEMDAS</b>. Start with parentheses and then exponents. Then perform (from left to right) multiplication and division. Finally, add and subtract (from left to right).</p>
+                            <ul>
+                                <li><b>P</b>: Since brackets function like parentheses, we will work our way outwards, starting with parentheses, then moving to brackets, and finally outside the brackets.<br>
+                                    <img src="./images/tvm4_pva_compounding_example2_help_step1.png" class="img-fluid img-math" alt=""></li>
+                                <li><b>E</b>: Raise the number within the parentheses to the exponent.<br>
+                                    <img src="./images/tvm4_pva_compounding_example2_help_step2.png" class="img-fluid img-math" alt=""><br>
+                                    <span class="note">Note: If you are using a calculator, it will be helpful to know that exponents in the denominator can be brought up to the numberator by switching the sign (+/-).</span><br>
+                                    <img class="img-fluid math-fluid" src="./images/tvm4_pva_example1_help_exponent_in_fraction.png" alt=""></li>
+                                <li><b>MD</b>: Simplify the embedded fraction.<br>
+                                    <img src="./images/tvm4_pva_compounding_example2_help_step3.png" class="img-fluid img-math" alt=""></li>
+                                <li><b>AS</b>: Subtract.<br>
+                                    <img src="./images/tvm4_pva_compounding_example2_help_step4.png" class="img-fluid img-math" alt=""></li>
+                                <li><b>MD</b>: Divide both sides by the number in the brackets to isolate CF. Then solve for CF.<br>
+                                    <img src="./images/tvm4_pva_compounding_example2_help_step5.png" class="img-fluid img-math" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 col-sm-3">
+                    <div class="pageNumber">Help 3</div>
+                </div>
+            </div>
+        </div>
+        <!-- ********** end help 3 ************************ -->
 
 
 
