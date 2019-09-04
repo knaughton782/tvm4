@@ -569,32 +569,17 @@
                 <div class="row">
                     <div class="col-12 col-sm-12">
                         <div class="content">
-                            <p>Let's work through a problem together.</p>
-                            <p>Example:</p>
-                            <p class="question">If you plan to deposit $100 at the end of each year for 3 years, how much will you have in 3 years?</p>
-                            <p>First, determine whether its an ordinary annuity or annuity due and draw the timeline.</p>
-                            <p class="indent">The cash flows in the question constitute an ordinary annuity because the payments arrive "at the end of each year". The timeline looks like this:
-                                <div class="text-center">
-                                    <img src="./images/tvm3_example_1_ordinary_annuity.png" class="img-fluid img-math" alt="">
-                                </div>
-                            </p>
-                            <p>To calculate Future Value, we could just calculate the FV of each lump sum payment using the general format of the TVM equation:
-                                <div class="math">
-                                    Payment 1: FV = $121<br>
-                                    Payment 2: FV = $110<br>
-                                    Payment 3: FV = $100<br>
-                                    <br>
-                                    FV = 121 + 110 + 100 = $331
-                                </div>
-                            </p>
-                            <p>If you don't understand how FV was calculated, click Help. If you understand the calculation, click Continue.</p>
+                            <p>You should also know how to use the TVM buttons on your financial calculators to find PVA:<br>
+                            <img src="./images/tvm4_pva_example1_finc_calc.png" class="img-fluid img-math" alt=""></p>
+                            <p>FV is 0 because, though there are regularly scheduled payments, there is no lump sum paid at the end of 3 years. If there were a lump sum paid at the end of the term, it would be positive because, as usual, PV and FV are opposite signs (+/-).</p>
+                            <p class="note">Always make sure your financial calculator is on the END mode. This is the most cmomon mistake made on exams.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                        <button type="button" class="continue help btn">Help</button>
-                        <button type="button" class="skip btn">Continue</button>
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
                     </div>
                 </div>
                 <div class="row">
@@ -608,31 +593,27 @@
 
 
 
-
-
-
             <!---------------- SLIDE 12 - CONTENT -->
             <div id="slide12" class="slide">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: Annuities</h2>
-                        <h3 class="secondaryTitle">Annuities</h3>
+                        <h3 class="secondaryTitle">Present Value of Annuities (PVA)</h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 col-sm-12">
                         <div class="content">
-                            <p>Calculating the FV of each individual payment is fine when there are only a few payments, but isn't recommended for long-term annuities. Therefore, we'll calculate the Future Value of the annuity (FVA) using the following equation:</p>
-                            <div class="text-center">
-                                <img src="./images/tvm3_fva_formula.png" class="img-fluid img-math" alt="">
-                            </div>
-                            <div class="math">
-                                <span class="FV">FVA</span> = The future value of the annuity<br>
-                                <span class="CF">CF</span> = Dollar amount of the individual cash flows<br>
-                                <span class="yrs">n</span> = number of years<br>
-                                <span class="int">i</span> = stated interest rate
-                            </div>
-                            <p>The FVA equation can be derived from the genral format of the TVM equation. The derivation won't be shown here, but you should be aware that there is a relationship between the two equations.</p>
+                            <p>We have now covered four ways to calculate PVA:
+                                <ul>
+                                    <li>Summing the PV of individual payments, found by using the basic TVM equation</li>
+                                    <li>Use the PVA formula</li>
+                                    <li>Find the FVA Factor and multiply it by CF</li>
+                                    <li>Use the TVM buttons on your financial calculator</li>
+                                </ul>
+                            </p>
+                            <p>You should practice all methods. The formulas are useful when working with spreadsheets and for applying the TVM concept to other ideas. The financial calculator is extremely useful when solving for i (to avoid more complicated algebra). If you have uneven cash flows, the basic TVM equation is a necessity.</p>
+                            <p>Practice problems using all the methods, both to keep the methods fresh in your mind and to check your work.</p>
                         </div>
                     </div>
                 </div>
@@ -651,42 +632,55 @@
 
 
 
-
-
             <!---------------- SLIDE 13 - CONTENT -->
             <div id="slide13" class="slide">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: Annuities</h2>
-                        <h3 class="secondaryTitle">Annuities</h3>
+                        <h3 class="secondaryTitle">Present Value of Annuities (PVA)</h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 col-sm-12">
                         <div class="content">
-                            <p>Now that we have the timeline and formula, we can use them to identify the variables and solve for FVA.</p>
-                            <p>Example:</p>
-                            <p class="question">How much is an annuity worth at the end of the three years if it pays $100 at the end of each year assuming 10% interest?</p>
-                            <div class="row">
-                                <div class="col-12 col-sm-12 col-md-6">
-                                    <div class="text-center">
-                                        <img src="./images/tvm3_example_1_ordinary_annuity.png" class="img-fluid img-math" alt="">
-                                    </div>
+                            <p>The PVA we just calculated is for an ordinary annuity. Remember that the difference between ordinary annuities and annuities due is the timing of payments:<br>
+                                <div class="text-center">
+                                    <b>Ordinary Annuity</b> - Payments are made at the end of each period<br>
+                                    <img src="./images/tvm4_ordinary_annuity_pva_time_line.png" class="img-fluid img-math" alt=""><br>
                                 </div>
-                                <div class="col-12 col-sm-12 col-md-6">
-                                    <div class="text-center">
-                                        <img src="./images/tvm3_fva_formula.png" class="img-fluid img-math" alt="">
-                                    </div>
+                                <div class="text-center">                                    <b>Annuity Due</b> - Payments are made at the beginning of each period<br>
+                                    <img src="./images/tvm4_annuity_due_pva_time_line.png" class="img-fluid img-math" alt="">
                                 </div>
+                            </p>
+                            <p>You may remember from TVM3, when we first introduced annuities, that finding the value of an ordinary annuity and an annuity due are exactly the same except for one crucial step at the end:</p><br>
+                            <div class="math">
+                                <b>Ordinary Annuity</b>
+                                <ul>
+                                    <li>Calculate the PV using the PVA equation<br>
+                                    <img src="./images/pva_general_equation.png" class="img-fluid img-math" alt=""></li>
+                                </ul>
                             </div>
-                            <p>Stay on this screen while you solve the problem. If you need help solving the problem, click Help. If you have the answer, click Continue.</p>
+                            <br>
+                            <div class="math">
+                                <b>Annuity Due</b>
+                                <ul>
+                                    <li>Calculate the PV using the PVA equation<br>
+                                        <img src="./images/pva_general_equation.png" class="img-fluid img-math" alt=""></li>
+                                        <li>Add an extra period of interest to the PVA amount using the PV equation.<br>
+                                        <img src="./images/tvm_sample_equation.png" class="img-fluid img-math" alt=""><br>where PV = PVA</li>
+                                </ul>
+                            </div>
+                            <p>Let's calculate the PVA of an annuity due.</p>
+                            <p class="question">What's the PV of an annuity due that pays $100 per year for 3 years at 10% interest?</p>
+                            <p>Hint: We already know that as an ordinary annuity, the PVA is $248.69.</p>
+                            <p>Calculate the problem; when you have the answer, click Continue.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                        <button type="button" class="continue btn help">Help</button>
-                        <button type="button" class="skip btn">Continue</button>
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
                     </div>
                 </div>
                 <div class="row">
@@ -699,23 +693,28 @@
 
 
 
-
-
-
             <!---------------- SLIDE 14 - CONTENT -->
             <div id="slide14" class="slide">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: Annuities</h2>
-                        <h3 class="secondaryTitle">Ordinary Annuity</h3>
+                        <h3 class="secondaryTitle">Present Value of Annuities (PVA)</h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 col-sm-12">
                         <div class="content">
-                            <p class="question">How much is an annuity worth at the end of three years if it pays $100 at the end of each year assuming 10% interest?</p>
-                            <p>FVA = $331, which agrees with our calculation of Future Value for each individual lump sum payment.</p>
-                            <p>If you didn't get the answer correct, click Help to see how to calculate the answer. Click Continue if you got the answer correct.</p>
+                            <p class="question">What's the PV of an annuity due that pays $100 per year for 3 years at 10% interest?</p>
+                            <p class="answer">The answer is:<br>
+                            <img src="./images/tvm4_pva_annuity_due_answer.png" class="img-fluid img-math" alt=""></p>
+                            <p>Since we knew the PVA of the ordinary annuity, we just needed to add an extra period of interest using the general form of the TVM equation:<br>
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6">
+                                    <img src="./images/tvm4_annuity_due_pva_time_line.png" class="img-fluid img-math" alt="">
+                                </div><br>
+                                <div class="col-12 col-sm-12 col-md-6"><img src="./images/tvm4_pva_annuity_due_calculation.png" class="img-fluid img-math" alt=""></div>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -739,19 +738,15 @@
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: Annuities</h2>
-                        <h3 class="secondaryTitle">Ordinary Annuity</h3>
+                        <h3 class="secondaryTitle">Present Value of Annuities (PVA)</h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 col-sm-12">
                         <div class="content">
-                            <p>Let's verify the answer a third way: by entering the variables into your financial calculator.</p>
-                            <p class="question">How much is an annuity worth at the end of three years if it pays $100 at the end of each year assuming 10% interest?</p>
-                            <div class="text-center">
-                                <img src="./images/tvm3_calculator_check_example.png" class="img-fluid img-math" alt="">
-                            </div>
-                            <p class="alert">Note: Make sure your calculator is on END mode. This is one of the most common erros made during tests.</p>
-                            <p>Again, FVA = $331, which agrees with our two other modes of calculation, the FVA formula and FV of individual lump sum payments.</p>
+                            <p>To use a financial calculator to solve for the PVA of an annuity due, the first step is to change the mode from END to BGN. Then input all the same numbers for the TVM buttons:<br>
+                            <img src="./images/tvm4_pva_example1_annuity_due_finc_calc.png" class="img-fluid img-math" alt=""></p>
+                            <p>Make sure that you switch back to END mode when you  are solving ordinary annuity problems or your calculations will be incorrect. Incorrect END/BGN settings are teh most common mistake on exams.</p>
 
                         </div>
                     </div>
@@ -776,7 +771,7 @@
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: Annuities</h2>
-                        <h3 class="secondaryTitle">FVA Factor</h3>
+                        <h3 class="secondaryTitle">Present Value of Annuities (PVA)</h3>
                     </div>
                 </div>
                 <div class="row">
@@ -820,7 +815,7 @@
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: Annuities</h2>
-                        <h3 class="secondaryTitle">Annuity Due</h3>
+                        <h3 class="secondaryTitle">Present Value of Annuities (PVA)</h3>
                     </div>
                 </div>
                 <div class="row">
@@ -871,7 +866,7 @@
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: Annuities</h2>
-                        <h3 class="secondaryTitle">Annuity Due</h3>
+                        <h3 class="secondaryTitle">Present Value of Annuities (PVA)</h3>
                     </div>
                 </div>
                 <div class="row">
@@ -918,12 +913,15 @@
                 </div>
             </div>
 
+
+
+
             <!---------------- SLIDE 19  - CONTENT -->
             <div id="slide19" class="slide">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: Annuities</h2>
-                        <h3 class="secondaryTitle">Annuities with Compound Interest</h3>
+                        <h3 class="secondaryTitle">Present Value of Annuities (PVA)</h3>
                     </div>
                 </div>
                 <div class="row">
@@ -1029,7 +1027,7 @@
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: Annuities</h2>
-                        <h3 class="secondaryTitle">Ordinary Annuity</h3>
+                        <h3 class="secondaryTitle">Present Value of Annuities (PVA)</h3>
                     </div>
                 </div>
                 <div class="row">
@@ -1062,7 +1060,7 @@
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: Annuities</h2>
-                        <h3 class="secondaryTitle">Annuities with Compound Interest</h3>
+                        <h3 class="secondaryTitle">Present Value of Annuities (PVA)</h3>
                     </div>
                 </div>
                 <div class="row">
