@@ -1092,18 +1092,18 @@
                                 <div class="col-12 col-sm-12 col-md-6">
                                     <div class="math">
                                         <b>Lump Sum</b><br>
-                                        <span class="PV">PVA</span> = ?<br>
-                                        <span class="CF">CF</span> = 45<br>
+                                        <span class="PV">PV</span> = ?<br>
+                                        <span class="FV">FV</span> = 1000<br>
                                         <span class="cmpd">m</span> = 2<br>
                                         <span class="FV"></span>FV</span> = 1000<br>
                                         <span class="yrs">n</span> = 10<br>
                                         <span class="int">i</span> = 8% &rarr; .08
                                     </div>
                                     <div class="text-center">
-                                        <img src="./images/pva_general_equation_with_compounding.png" class="img-fluid img-math" alt="">
+                                        <img src="./images/tvm_sample_equation_modify_for_compounding_put_in_m.png" class="img-fluid img-math" alt="">
                                     </div>
                                     <div class="text-center">
-                                        <img src="./images/tvm4_combo_example3_pva_fill_in_formula.png" class="img-fluid img-math" alt="">
+                                        <img src="./images/tvm4_combo_example3_pv_fill_in_formula.png" class="img-fluid img-math" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -1113,19 +1113,44 @@
                             <br>
                             <h4>Performing the Algebra</h4>
                             <p>Once you have plugged the variables into the equation, solve using the order of operations. Remember the acronym <b>PEMDAS</b>. Start with parentheses and then exponents. Then perform (from left to right) multiplication and division. Finally, add and subtract (from left to right).</p>
+                            <p>We'll perform the calculations separately, starting with the annuity.</p>
+                            <hr>
+                            <p><b>Annuity (PVA) Calculation</b></p>
                             <ul>
-                                <li><b>P</b>: Since brackets function like parentheses, we will work our way outwards, starting with parentheses, then moving to brackets, and finally outside the brackets.<br>
-                                    <img src="./images/tvm4_pva_compounding_example2_help_step1.png" class="img-fluid img-math" alt=""></li>
+                                <li><b>P</b>: Since brackets function like parentheses, so we will first simplify the numbers in the parentheses and then work on the bracket as a whole.<br>
+                                    <img src="./images/tvm4_combo_example3_help_step1.png" class="img-fluid img-math" alt=""></li>
                                 <li><b>E</b>: Raise the number within the parentheses to the exponent.<br>
-                                    <img src="./images/tvm4_pva_compounding_example2_help_step2.png" class="img-fluid img-math" alt=""><br>
-                                    <span class="note">Note: If you are using a calculator, it will be helpful to know that exponents in the denominator can be brought up to the numberator by switching the sign (+/-).</span><br>
-                                    <img class="img-fluid math-fluid" src="./images/tvm4_pva_example1_help_exponent_in_fraction.png" alt=""></li>
+                                    <img src="./images/tvm4_combo_example3_help_step2.png" class="img-fluid img-math" alt=""><br>
+                                </li>
+
                                 <li><b>MD</b>: Simplify the embedded fraction.<br>
-                                    <img src="./images/tvm4_pva_compounding_example2_help_step3.png" class="img-fluid img-math" alt=""></li>
-                                <li><b>AS</b>: Subtract.<br>
-                                    <img src="./images/tvm4_pva_compounding_example2_help_step4.png" class="img-fluid img-math" alt=""></li>
-                                <li><b>MD</b>: Divide both sides by the number in the brackets to isolate CF. Then solve for CF.<br>
-                                    <img src="./images/tvm4_pva_compounding_example2_help_step5.png" class="img-fluid img-math" alt=""></li>
+                                    <img src="./images/tvm4_combo_example3_help_step3.png" class="img-fluid img-math" alt=""></li>
+
+                                <li><b>AS</b>: Subtract the numbers in the numerator.<br>
+                                    <img src="./images/tvm4_combo_example3_help_step4.png" class="img-fluid img-math" alt=""></li>
+
+                                <li><b>MD</b>: Simplify the equation within the bracket and multiply the CF by the number within the bracket.<br>
+                                    <img src="./images/tvm4_combo_example3_help_step5.png" class="img-fluid img-math" alt=""></li>
+
+                            </ul>
+                            <hr>
+                            <p><b>Lump Sum (PV) Calculation</b></p>
+                            <div>
+                                <img src="./images/tvm4_combo_example3_pv_fill_in_formula.png" class="img-fluid img-math" alt="">
+                            </div>
+                            <ul>
+                                <li><b>P</b>: Start with the numbers in the parentheses. Since brackets function like parentheses, we will work in the following order: inner parentheses, outer brackers, and then outside the bracket.<br>
+                                    <img src="./images/tvm4_combo_example3_pv_help_step1.png" class="img-fluid img-math" alt=""></li>
+                                <li><b>E</b>: Raise the number within the parentheses to the exponent.<br>
+                                    <img src="./images/tvm4_combo_example3_pv_help_step2.png" class="img-fluid img-math" alt=""><br>
+                                </li>
+
+                                <li><b>MD</b>: Divide both sides by the number in the parentheses to isolate PV. Then solve for PV.<br>
+                                    <img src="./images/tvm4_combo_example3_pv_help_step3.png" class="img-fluid img-math" alt=""></li>
+
+                                <li><b>AD</b>: Add the Present Value of the annuity (PVA) and lump sum (PV) to find what the bond is worth today.<br>
+                                    <img src="./images/tvm4_combo_example3_add_pv_and_pva.png" class="img-fluid img-math" alt=""></li>
+
                             </ul>
                         </div>
                     </div>
@@ -1158,8 +1183,9 @@
             <div class="row">
                 <div class="col-12 col-sm-12">
                     <div class="content">
-                        <p class="question">How much is an annuity worth at the end of three years if it pays $10 per month at the end of each month assuming 10% interest?</p>
-                        <p class="answer">FVA = $417.99</p>
+                        <p class="question">What would you pay for a bond that pays $45 every six months and also pays its maturity value of $1000 at the end of the 10 years, if you require an 8% return on your investment?</p>
+                        <p class="answer">The answer is <br>
+                            <span class="PV">PVA</span> + <span class="PV">PV</span> = $1067.95</p>
                         <p>Did you get the answer right? If not, please click on Help to see how to calculate the problem. If you answered correctly, please click Continue.</p>
 
                     </div>
@@ -1191,15 +1217,17 @@
             <div class="row">
                 <div class="col-12 col-sm-12">
                     <div class="content">
-                        <p>In general, the FVA of an annuity will be higher if payments are split into smaller pieces and paid more often?</p>
-                        <p>For instance, homeowners sometimes save money by paying half the mortgage payment every two weeks, instead of the full amount on a monthly basis.</p>
+                        <p>On a financial calculator, the problem would look like this:<br>
+                            <img src="./images/tvm4_combo_example3_finc_calc.png" class="img-fluid img-math" alt=""><br>
+                            Note that PV and FV are always opposite signs. PV is a negative number from your perspective, because there is outflow of cash to buy the bond today. FV is a positive number because you will receive an inflow of cash on the maturity date.
+                        </p>
 
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                    <button type="button" class="back help btn">Help</button>
+                    <button type="button" class="back btn">Back</button>
                     <button type="button" class="continue btn">Continue</button>
                 </div>
             </div>
@@ -1212,10 +1240,46 @@
 
 
 
+        <!---------------- SLIDE 22  - CONTENT -->
+        <div id="slide22" class="slide">
+            <div class="row slideTitle">
+                <div class="col-12 col-sm-12">
+                    <h2 class="primaryTitle">TVM: Annuities</h2>
+                    <h3 class="secondaryTitle">Present Value of Annuities (PVA)</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <div class="content">
+                        <p>Solving a combination problem follows basically the same path, though it may require more calculation. The steps are always the same.</p>
+                        <ul>
+                            <li>Determine whether the problem involves an annuity, a lump sum, or a combination of the two.</li>
+                            <li>Determine which variables you do and don't know: interest rate, number of years, compounding and CF frequency, amount of the CFs, PV amount, or FV amount.</li>
+                            <li>Solve for the unknown variable(s).</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1 col-sm-1">
+                    <div class="pageNumber">22</div>
+                </div>
+            </div>
+        </div>
+
+
+
 
         <!-- ***************** exercises ********************* -->
         <!-- exercise intro slide -->
-        <div id="exercises3-slide1" class="slide exercises">
+        <div id="exercises4-slide1" class="slide exercises">
             <div class="row slideTitle">
                 <div class="col-12 col-sm-12">
                     <h2 class="primaryTitle">TVM: Annuities</h2>
@@ -1246,8 +1310,8 @@
 
 
 
-        <!-- exercises3 slide 2  : problem 1 -->
-        <div id="exercises3-slide2" class="slide exercises">
+        <!-- exercises4 slide 2  : problem 1 -->
+        <div id="exercises4-slide2" class="slide exercises">
             <div class="row slideTitle">
                 <div class="col-12 col-sm-12">
                     <h2 class="primaryTitle">TVM: Annuities</h2>
@@ -1304,8 +1368,8 @@
 
 
 
-        <!-- exercises3 slide 3 - problem 1 answer  -->
-        <div id="exercises3-slide3" class="slide exercises">
+        <!-- exercises4 slide 3 - problem 1 answer  -->
+        <div id="exercises4-slide3" class="slide exercises">
             <div class="row slideTitle">
                 <div class="col-12 col-sm-12">
                     <h2 class="primaryTitle">TVM: Annuities</h2>
@@ -1343,8 +1407,8 @@
         </div>
 
 
-        <!-- exercises3-slide4 : problem 2 -->
-        <div id="exercises3-slide4" class="slide exercises">
+        <!-- exercises4-slide4 : problem 2 -->
+        <div id="exercises4-slide4" class="slide exercises">
             <div class="row slideTitle">
                 <div class="col-12 col-sm-12">
                     <h2 class="primaryTitle">TVM: Annuities</h2>
@@ -1386,8 +1450,8 @@
 
 
 
-        <!-- exercises3-slide5 : answer problem 2 -->
-        <div id="exercises3-slide5" class="slide exercises">
+        <!-- exercises4-slide5 : answer problem 2 -->
+        <div id="exercises4-slide5" class="slide exercises">
             <div class="row slideTitle">
                 <div class="col-12 col-sm-12">
                     <h2 class="primaryTitle">TVM: Annuities</h2>
@@ -1433,8 +1497,8 @@
 
 
 
-        <!-- exercises3-slide6 :  problem 3 -->
-        <div id="exercises3-slide6" class="slide exercises">
+        <!-- exercises4-slide6 :  problem 3 -->
+        <div id="exercises4-slide6" class="slide exercises">
             <div class="row slideTitle">
                 <div class="col-12 col-sm-12">
                     <h2 class="primaryTitle">TVM: Annuities</h2>
@@ -1485,8 +1549,8 @@
 
 
 
-        <!-- exercises3-slide7 :  answer problem 3 -->
-        <div id="exercises3-slide7" class="slide exercises">
+        <!-- exercises4-slide7 :  answer problem 3 -->
+        <div id="exercises4-slide7" class="slide exercises">
             <div class="row slideTitle">
                 <div class="col-12 col-sm-12">
                     <h2 class="primaryTitle">TVM: Annuities</h2>
@@ -1522,8 +1586,8 @@
 
 
 
-        <!-- exercises3-slide8 :   problem 4 -->
-        <div id="exercises3-slide8" class="slide exercises">
+        <!-- exercises4-slide8 :   problem 4 -->
+        <div id="exercises4-slide8" class="slide exercises">
             <div class="row slideTitle">
                 <div class="col-12 col-sm-12">
                     <h2 class="primaryTitle">TVM: Annuities</h2>
@@ -1564,8 +1628,8 @@
         </div>
 
 
-        <!-- exercises3-slide9 :   answer problem 4 -->
-        <div id="exercises3-slide9" class="slide exercises">
+        <!-- exercises4-slide9 :   answer problem 4 -->
+        <div id="exercises4-slide9" class="slide exercises">
             <div class="row slideTitle">
                 <div class="col-12 col-sm-12">
                     <h2 class="primaryTitle">TVM: Annuities</h2>
@@ -1609,8 +1673,8 @@
 
 
 
-        <!-- exercises3-slide10 : problem 5  -->
-        <div id="exercises3-slide10" class="slide exercises">
+        <!-- exercises4-slide10 : problem 5  -->
+        <div id="exercises4-slide10" class="slide exercises">
             <div class="row slideTitle">
                 <div class="col-12 col-sm-12">
                     <h2 class="primaryTitle">TVM: Annuities</h2>
@@ -1653,8 +1717,8 @@
 
 
 
-        <!-- exercises3-slide11 :   answer problem 5 -->
-        <div id="exercises3-slide11" class="slide exercises">
+        <!-- exercises4-slide11 :   answer problem 5 -->
+        <div id="exercises4-slide11" class="slide exercises">
             <div class="row slideTitle">
                 <div class="col-12 col-sm-12">
                     <h2 class="primaryTitle">TVM: Annuities</h2>
@@ -1703,8 +1767,8 @@
 
 
 
-        <!-- exercises3-slide12 : problem 6  -->
-        <div id="exercises3-slide12" class="slide exercises">
+        <!-- exercises4-slide12 : problem 6  -->
+        <div id="exercises4-slide12" class="slide exercises">
             <div class="row slideTitle">
                 <div class="col-12 col-sm-12">
                     <h2 class="primaryTitle">TVM: Annuities</h2>
@@ -1753,8 +1817,8 @@
 
 
 
-        <!-- exercises3-slide13 :   answer problem 6 -->
-        <div id="exercises3-slide13" class="slide exercises">
+        <!-- exercises4-slide13 :   answer problem 6 -->
+        <div id="exercises4-slide13" class="slide exercises">
             <div class="row slideTitle">
                 <div class="col-12 col-sm-12">
                     <h2 class="primaryTitle">TVM: Annuities</h2>
@@ -1802,8 +1866,8 @@
 
 
 
-        <!-- exercises3-slide14 :   answer problem 6 -->
-        <div id="exercises3-slide14" class="slide exercises">
+        <!-- exercises4-slide12 : problem 6  -->
+        <div id="exercises4-slide12" class="slide exercises">
             <div class="row slideTitle">
                 <div class="col-12 col-sm-12">
                     <h2 class="primaryTitle">TVM: Annuities</h2>
@@ -1813,23 +1877,73 @@
             <div class="row">
                 <div class="col-12 col-sm-12">
                     <div class="content">
-                        <h4>Solution, Part 2</h4>
+                        <!-- Exercises -->
+                        <h4>Identify the Variables</h4>
+                        <p>Enter the value of each variable in the boxes below. Leave the unknown variable blank.</p>
                         <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
-                        <p>Next, calculate the FVA of the semi-annual option:</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="" class="indent">
+                                    <label><span class="FV">FVA</span> of the weekly option:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+        
+                                    <label><span class="FV">FVA</span> of the bi-weekly option:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+        
+                                    <label><b>Difference in values</b>:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                </form>
+                                <button onclick="exercise_6()" type="button" class="btn calculateBtn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                    <button type="button" class="back btn hide">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-5">
+                    <div class="pageNumber">12 <span class="note">&nbsp;(Question 6)</span></div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!-- exercises4-slide13 :   answer problem 6 -->
+        <div id="exercises4-slide13" class="slide exercises">
+            <div class="row slideTitle">
+                <div class="col-12 col-sm-12">
+                    <h2 class="primaryTitle">TVM: Annuities</h2>
+                    <h3 class="secondaryTitle">Exercises</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <div class="content">
+                        <h4>Solution, Part 1</h4>
+                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+                        <p>First, calculate the FVA of the quarterly option:</p>
                         <div class="row">
                             <div class="col-12 col-sm-12 col-md-6">
                                 <p class="math" style="margin-left: 30px;"><br>
-                                    <b>The semi-annual option:</b><br>
+                                    <b>The quarterly option:</b><br>
                                     <span class="FV">FVA</span> = ?<br>
-                                    <span class="CF">CF</span> = 1000<br>
+                                    <span class="CF">CF</span> = 500<br>
                                     <span class="int">i</span> = 0.06<br>
                                     <span class="yrs">n</span> = 10<br>
-                                    <span class="cmpd">m</span> = 2<br>
+                                    <span class="cmpd">m</span> = 4<br>
                                 </p>
                             </div>
                             <div class="col-12 col-sm-12 col-md-6">
                                 <p class="text-center">
-                                    <img src="./images/tvm3_exercise4b_solution.png" class="img-fluid img-math" alt="">
+                                    <img src="./images/tvm3_exercise4a_solution.png" class="img-fluid img-math" alt="">
                                 </p>
                             </div>
                         </div>
@@ -1844,15 +1958,15 @@
             </div>
             <div class="row">
                 <div class="col-12 col-sm-3">
-                    <div class="pageNumber">14</div>
+                    <div class="pageNumber">13</div>
                 </div>
             </div>
         </div>
 
 
 
-        <!-- exercises3-slide15 :   answer problem 6 -->
-        <div id="exercises3-slide15" class="slide exercises">
+         <!-- exercises4-slide12 : problem 6  -->
+        <div id="exercises4-slide12" class="slide exercises">
             <div class="row slideTitle">
                 <div class="col-12 col-sm-12">
                     <h2 class="primaryTitle">TVM: Annuities</h2>
@@ -1862,15 +1976,76 @@
             <div class="row">
                 <div class="col-12 col-sm-12">
                     <div class="content">
-                        <h4>Solution, Part 3</h4>
+                        <!-- Exercises -->
+                        <h4>Identify the Variables</h4>
+                        <p>Enter the value of each variable in the boxes below. Leave the unknown variable blank.</p>
                         <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
-                        <p>After finding the individual FVA values, then subtract the difference to calculate how much more the quarterly option earns:</p>
-                        <div class="col-12 col-sm-12">
-                            <p class="text-center">
-                                <img src="./images/tvm3_exercise4c_solution.png" class="img-fluid img-math" alt="">
-                            </p>
-                        </div>
+                        <div class="container">
+                            <div class="">
+                                <form action="" class="indent">
+                                    <label><span class="FV">FVA</span> of the weekly option:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
 
+                                    <label><span class="FV">FVA</span> of the bi-weekly option:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+
+                                    <label><b>Difference in values</b>:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                </form>
+                                <button onclick="exercise_6()" type="button" class="btn calculateBtn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                    <button type="button" class="back btn hide">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-5">
+                    <div class="pageNumber">12 <span class="note">&nbsp;(Question 6)</span></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- exercises4-slide13 :   answer problem 6 -->
+        <div id="exercises4-slide13" class="slide exercises">
+            <div class="row slideTitle">
+                <div class="col-12 col-sm-12">
+                    <h2 class="primaryTitle">TVM: Annuities</h2>
+                    <h3 class="secondaryTitle">Exercises</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <div class="content">
+                        <h4>Solution, Part 1</h4>
+                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+                        <p>First, calculate the FVA of the quarterly option:</p>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="math" style="margin-left: 30px;"><br>
+                                    <b>The quarterly option:</b><br>
+                                    <span class="FV">FVA</span> = ?<br>
+                                    <span class="CF">CF</span> = 500<br>
+                                    <span class="int">i</span> = 0.06<br>
+                                    <span class="yrs">n</span> = 10<br>
+                                    <span class="cmpd">m</span> = 4<br>
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="text-center">
+                                    <img src="./images/tvm3_exercise4a_solution.png" class="img-fluid img-math" alt="">
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1882,7 +2057,304 @@
             </div>
             <div class="row">
                 <div class="col-12 col-sm-3">
-                    <div class="pageNumber">15</div>
+                    <div class="pageNumber">13</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- exercises4-slide12 : problem 6  -->
+        <div id="exercises4-slide12" class="slide exercises">
+            <div class="row slideTitle">
+                <div class="col-12 col-sm-12">
+                    <h2 class="primaryTitle">TVM: Annuities</h2>
+                    <h3 class="secondaryTitle">Exercises</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <div class="content">
+                        <!-- Exercises -->
+                        <h4>Identify the Variables</h4>
+                        <p>Enter the value of each variable in the boxes below. Leave the unknown variable blank.</p>
+                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="" class="indent">
+                                    <label><span class="FV">FVA</span> of the weekly option:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+        
+                                    <label><span class="FV">FVA</span> of the bi-weekly option:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+        
+                                    <label><b>Difference in values</b>:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                </form>
+                                <button onclick="exercise_6()" type="button" class="btn calculateBtn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                    <button type="button" class="back btn hide">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-5">
+                    <div class="pageNumber">12 <span class="note">&nbsp;(Question 6)</span></div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!-- exercises4-slide13 :   answer problem 6 -->
+        <div id="exercises4-slide13" class="slide exercises">
+            <div class="row slideTitle">
+                <div class="col-12 col-sm-12">
+                    <h2 class="primaryTitle">TVM: Annuities</h2>
+                    <h3 class="secondaryTitle">Exercises</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <div class="content">
+                        <h4>Solution, Part 1</h4>
+                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+                        <p>First, calculate the FVA of the quarterly option:</p>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="math" style="margin-left: 30px;"><br>
+                                    <b>The quarterly option:</b><br>
+                                    <span class="FV">FVA</span> = ?<br>
+                                    <span class="CF">CF</span> = 500<br>
+                                    <span class="int">i</span> = 0.06<br>
+                                    <span class="yrs">n</span> = 10<br>
+                                    <span class="cmpd">m</span> = 4<br>
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="text-center">
+                                    <img src="./images/tvm3_exercise4a_solution.png" class="img-fluid img-math" alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                    <button type="button" class="back btn hide">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-3">
+                    <div class="pageNumber">13</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- exercises4-slide12 : problem 6  -->
+        <div id="exercises4-slide12" class="slide exercises">
+            <div class="row slideTitle">
+                <div class="col-12 col-sm-12">
+                    <h2 class="primaryTitle">TVM: Annuities</h2>
+                    <h3 class="secondaryTitle">Exercises</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <div class="content">
+                        <!-- Exercises -->
+                        <h4>Identify the Variables</h4>
+                        <p>Enter the value of each variable in the boxes below. Leave the unknown variable blank.</p>
+                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="" class="indent">
+                                    <label><span class="FV">FVA</span> of the weekly option:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+        
+                                    <label><span class="FV">FVA</span> of the bi-weekly option:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+        
+                                    <label><b>Difference in values</b>:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                </form>
+                                <button onclick="exercise_6()" type="button" class="btn calculateBtn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                    <button type="button" class="back btn hide">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-5">
+                    <div class="pageNumber">12 <span class="note">&nbsp;(Question 6)</span></div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!-- exercises4-slide13 :   answer problem 6 -->
+        <div id="exercises4-slide13" class="slide exercises">
+            <div class="row slideTitle">
+                <div class="col-12 col-sm-12">
+                    <h2 class="primaryTitle">TVM: Annuities</h2>
+                    <h3 class="secondaryTitle">Exercises</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <div class="content">
+                        <h4>Solution, Part 1</h4>
+                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+                        <p>First, calculate the FVA of the quarterly option:</p>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="math" style="margin-left: 30px;"><br>
+                                    <b>The quarterly option:</b><br>
+                                    <span class="FV">FVA</span> = ?<br>
+                                    <span class="CF">CF</span> = 500<br>
+                                    <span class="int">i</span> = 0.06<br>
+                                    <span class="yrs">n</span> = 10<br>
+                                    <span class="cmpd">m</span> = 4<br>
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="text-center">
+                                    <img src="./images/tvm3_exercise4a_solution.png" class="img-fluid img-math" alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                    <button type="button" class="back btn hide">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-3">
+                    <div class="pageNumber">13</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- exercises4-slide12 : problem 6  -->
+        <div id="exercises4-slide12" class="slide exercises">
+            <div class="row slideTitle">
+                <div class="col-12 col-sm-12">
+                    <h2 class="primaryTitle">TVM: Annuities</h2>
+                    <h3 class="secondaryTitle">Exercises</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <div class="content">
+                        <!-- Exercises -->
+                        <h4>Identify the Variables</h4>
+                        <p>Enter the value of each variable in the boxes below. Leave the unknown variable blank.</p>
+                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="" class="indent">
+                                    <label><span class="FV">FVA</span> of the weekly option:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+        
+                                    <label><span class="FV">FVA</span> of the bi-weekly option:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+        
+                                    <label><b>Difference in values</b>:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                </form>
+                                <button onclick="exercise_6()" type="button" class="btn calculateBtn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                    <button type="button" class="back btn hide">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-5">
+                    <div class="pageNumber">12 <span class="note">&nbsp;(Question 6)</span></div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!-- exercises4-slide13 :   answer problem 6 -->
+        <div id="exercises4-slide13" class="slide exercises">
+            <div class="row slideTitle">
+                <div class="col-12 col-sm-12">
+                    <h2 class="primaryTitle">TVM: Annuities</h2>
+                    <h3 class="secondaryTitle">Exercises</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <div class="content">
+                        <h4>Solution, Part 1</h4>
+                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+                        <p>First, calculate the FVA of the quarterly option:</p>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="math" style="margin-left: 30px;"><br>
+                                    <b>The quarterly option:</b><br>
+                                    <span class="FV">FVA</span> = ?<br>
+                                    <span class="CF">CF</span> = 500<br>
+                                    <span class="int">i</span> = 0.06<br>
+                                    <span class="yrs">n</span> = 10<br>
+                                    <span class="cmpd">m</span> = 4<br>
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="text-center">
+                                    <img src="./images/tvm3_exercise4a_solution.png" class="img-fluid img-math" alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                    <button type="button" class="back btn hide">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-3">
+                    <div class="pageNumber">13</div>
                 </div>
             </div>
         </div>
@@ -1890,8 +2362,709 @@
 
 
 
-        <!-- exercises3-slide16  -->
-        <div id="exercises3-slide16" class="slide">
+        <!-- exercises4-slide12 : problem 6  -->
+        <div id="exercises4-slide12" class="slide exercises">
+            <div class="row slideTitle">
+                <div class="col-12 col-sm-12">
+                    <h2 class="primaryTitle">TVM: Annuities</h2>
+                    <h3 class="secondaryTitle">Exercises</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <div class="content">
+                        <!-- Exercises -->
+                        <h4>Identify the Variables</h4>
+                        <p>Enter the value of each variable in the boxes below. Leave the unknown variable blank.</p>
+                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="" class="indent">
+                                    <label><span class="FV">FVA</span> of the weekly option:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+        
+                                    <label><span class="FV">FVA</span> of the bi-weekly option:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+        
+                                    <label><b>Difference in values</b>:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                </form>
+                                <button onclick="exercise_6()" type="button" class="btn calculateBtn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                    <button type="button" class="back btn hide">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-5">
+                    <div class="pageNumber">12 <span class="note">&nbsp;(Question 6)</span></div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!-- exercises4-slide13 :   answer problem 6 -->
+        <div id="exercises4-slide13" class="slide exercises">
+            <div class="row slideTitle">
+                <div class="col-12 col-sm-12">
+                    <h2 class="primaryTitle">TVM: Annuities</h2>
+                    <h3 class="secondaryTitle">Exercises</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <div class="content">
+                        <h4>Solution, Part 1</h4>
+                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+                        <p>First, calculate the FVA of the quarterly option:</p>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="math" style="margin-left: 30px;"><br>
+                                    <b>The quarterly option:</b><br>
+                                    <span class="FV">FVA</span> = ?<br>
+                                    <span class="CF">CF</span> = 500<br>
+                                    <span class="int">i</span> = 0.06<br>
+                                    <span class="yrs">n</span> = 10<br>
+                                    <span class="cmpd">m</span> = 4<br>
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="text-center">
+                                    <img src="./images/tvm3_exercise4a_solution.png" class="img-fluid img-math" alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                    <button type="button" class="back btn hide">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-3">
+                    <div class="pageNumber">13</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- exercises4-slide12 : problem 6  -->
+        <div id="exercises4-slide12" class="slide exercises">
+            <div class="row slideTitle">
+                <div class="col-12 col-sm-12">
+                    <h2 class="primaryTitle">TVM: Annuities</h2>
+                    <h3 class="secondaryTitle">Exercises</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <div class="content">
+                        <!-- Exercises -->
+                        <h4>Identify the Variables</h4>
+                        <p>Enter the value of each variable in the boxes below. Leave the unknown variable blank.</p>
+                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="" class="indent">
+                                    <label><span class="FV">FVA</span> of the weekly option:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+        
+                                    <label><span class="FV">FVA</span> of the bi-weekly option:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+        
+                                    <label><b>Difference in values</b>:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                </form>
+                                <button onclick="exercise_6()" type="button" class="btn calculateBtn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                    <button type="button" class="back btn hide">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-5">
+                    <div class="pageNumber">12 <span class="note">&nbsp;(Question 6)</span></div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!-- exercises4-slide13 :   answer problem 6 -->
+        <div id="exercises4-slide13" class="slide exercises">
+            <div class="row slideTitle">
+                <div class="col-12 col-sm-12">
+                    <h2 class="primaryTitle">TVM: Annuities</h2>
+                    <h3 class="secondaryTitle">Exercises</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <div class="content">
+                        <h4>Solution, Part 1</h4>
+                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+                        <p>First, calculate the FVA of the quarterly option:</p>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="math" style="margin-left: 30px;"><br>
+                                    <b>The quarterly option:</b><br>
+                                    <span class="FV">FVA</span> = ?<br>
+                                    <span class="CF">CF</span> = 500<br>
+                                    <span class="int">i</span> = 0.06<br>
+                                    <span class="yrs">n</span> = 10<br>
+                                    <span class="cmpd">m</span> = 4<br>
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="text-center">
+                                    <img src="./images/tvm3_exercise4a_solution.png" class="img-fluid img-math" alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                    <button type="button" class="back btn hide">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-3">
+                    <div class="pageNumber">13</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- exercises4-slide12 : problem 6  -->
+        <div id="exercises4-slide12" class="slide exercises">
+            <div class="row slideTitle">
+                <div class="col-12 col-sm-12">
+                    <h2 class="primaryTitle">TVM: Annuities</h2>
+                    <h3 class="secondaryTitle">Exercises</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <div class="content">
+                        <!-- Exercises -->
+                        <h4>Identify the Variables</h4>
+                        <p>Enter the value of each variable in the boxes below. Leave the unknown variable blank.</p>
+                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="" class="indent">
+                                    <label><span class="FV">FVA</span> of the weekly option:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+        
+                                    <label><span class="FV">FVA</span> of the bi-weekly option:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+        
+                                    <label><b>Difference in values</b>:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                </form>
+                                <button onclick="exercise_6()" type="button" class="btn calculateBtn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                    <button type="button" class="back btn hide">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-5">
+                    <div class="pageNumber">12 <span class="note">&nbsp;(Question 6)</span></div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!-- exercises4-slide13 :   answer problem 6 -->
+        <div id="exercises4-slide13" class="slide exercises">
+            <div class="row slideTitle">
+                <div class="col-12 col-sm-12">
+                    <h2 class="primaryTitle">TVM: Annuities</h2>
+                    <h3 class="secondaryTitle">Exercises</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <div class="content">
+                        <h4>Solution, Part 1</h4>
+                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+                        <p>First, calculate the FVA of the quarterly option:</p>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="math" style="margin-left: 30px;"><br>
+                                    <b>The quarterly option:</b><br>
+                                    <span class="FV">FVA</span> = ?<br>
+                                    <span class="CF">CF</span> = 500<br>
+                                    <span class="int">i</span> = 0.06<br>
+                                    <span class="yrs">n</span> = 10<br>
+                                    <span class="cmpd">m</span> = 4<br>
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="text-center">
+                                    <img src="./images/tvm3_exercise4a_solution.png" class="img-fluid img-math" alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                    <button type="button" class="back btn hide">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-3">
+                    <div class="pageNumber">13</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- exercises4-slide12 : problem 6  -->
+        <div id="exercises4-slide12" class="slide exercises">
+            <div class="row slideTitle">
+                <div class="col-12 col-sm-12">
+                    <h2 class="primaryTitle">TVM: Annuities</h2>
+                    <h3 class="secondaryTitle">Exercises</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <div class="content">
+                        <!-- Exercises -->
+                        <h4>Identify the Variables</h4>
+                        <p>Enter the value of each variable in the boxes below. Leave the unknown variable blank.</p>
+                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="" class="indent">
+                                    <label><span class="FV">FVA</span> of the weekly option:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+        
+                                    <label><span class="FV">FVA</span> of the bi-weekly option:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+        
+                                    <label><b>Difference in values</b>:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                </form>
+                                <button onclick="exercise_6()" type="button" class="btn calculateBtn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                    <button type="button" class="back btn hide">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-5">
+                    <div class="pageNumber">12 <span class="note">&nbsp;(Question 6)</span></div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!-- exercises4-slide13 :   answer problem 6 -->
+        <div id="exercises4-slide13" class="slide exercises">
+            <div class="row slideTitle">
+                <div class="col-12 col-sm-12">
+                    <h2 class="primaryTitle">TVM: Annuities</h2>
+                    <h3 class="secondaryTitle">Exercises</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <div class="content">
+                        <h4>Solution, Part 1</h4>
+                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+                        <p>First, calculate the FVA of the quarterly option:</p>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="math" style="margin-left: 30px;"><br>
+                                    <b>The quarterly option:</b><br>
+                                    <span class="FV">FVA</span> = ?<br>
+                                    <span class="CF">CF</span> = 500<br>
+                                    <span class="int">i</span> = 0.06<br>
+                                    <span class="yrs">n</span> = 10<br>
+                                    <span class="cmpd">m</span> = 4<br>
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="text-center">
+                                    <img src="./images/tvm3_exercise4a_solution.png" class="img-fluid img-math" alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                    <button type="button" class="back btn hide">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-3">
+                    <div class="pageNumber">13</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- exercises4-slide12 : problem 6  -->
+        <div id="exercises4-slide12" class="slide exercises">
+            <div class="row slideTitle">
+                <div class="col-12 col-sm-12">
+                    <h2 class="primaryTitle">TVM: Annuities</h2>
+                    <h3 class="secondaryTitle">Exercises</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <div class="content">
+                        <!-- Exercises -->
+                        <h4>Identify the Variables</h4>
+                        <p>Enter the value of each variable in the boxes below. Leave the unknown variable blank.</p>
+                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="" class="indent">
+                                    <label><span class="FV">FVA</span> of the weekly option:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+        
+                                    <label><span class="FV">FVA</span> of the bi-weekly option:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+        
+                                    <label><b>Difference in values</b>:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                </form>
+                                <button onclick="exercise_6()" type="button" class="btn calculateBtn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                    <button type="button" class="back btn hide">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-5">
+                    <div class="pageNumber">12 <span class="note">&nbsp;(Question 6)</span></div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!-- exercises4-slide13 :   answer problem 6 -->
+        <div id="exercises4-slide13" class="slide exercises">
+            <div class="row slideTitle">
+                <div class="col-12 col-sm-12">
+                    <h2 class="primaryTitle">TVM: Annuities</h2>
+                    <h3 class="secondaryTitle">Exercises</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <div class="content">
+                        <h4>Solution, Part 1</h4>
+                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+                        <p>First, calculate the FVA of the quarterly option:</p>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="math" style="margin-left: 30px;"><br>
+                                    <b>The quarterly option:</b><br>
+                                    <span class="FV">FVA</span> = ?<br>
+                                    <span class="CF">CF</span> = 500<br>
+                                    <span class="int">i</span> = 0.06<br>
+                                    <span class="yrs">n</span> = 10<br>
+                                    <span class="cmpd">m</span> = 4<br>
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="text-center">
+                                    <img src="./images/tvm3_exercise4a_solution.png" class="img-fluid img-math" alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                    <button type="button" class="back btn hide">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-3">
+                    <div class="pageNumber">13</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- exercises4-slide12 : problem 6  -->
+        <div id="exercises4-slide12" class="slide exercises">
+            <div class="row slideTitle">
+                <div class="col-12 col-sm-12">
+                    <h2 class="primaryTitle">TVM: Annuities</h2>
+                    <h3 class="secondaryTitle">Exercises</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <div class="content">
+                        <!-- Exercises -->
+                        <h4>Identify the Variables</h4>
+                        <p>Enter the value of each variable in the boxes below. Leave the unknown variable blank.</p>
+                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="" class="indent">
+                                    <label><span class="FV">FVA</span> of the weekly option:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+        
+                                    <label><span class="FV">FVA</span> of the bi-weekly option:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+        
+                                    <label><b>Difference in values</b>:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                </form>
+                                <button onclick="exercise_6()" type="button" class="btn calculateBtn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                    <button type="button" class="back btn hide">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-5">
+                    <div class="pageNumber">12 <span class="note">&nbsp;(Question 6)</span></div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!-- exercises4-slide13 :   answer problem 6 -->
+        <div id="exercises4-slide13" class="slide exercises">
+            <div class="row slideTitle">
+                <div class="col-12 col-sm-12">
+                    <h2 class="primaryTitle">TVM: Annuities</h2>
+                    <h3 class="secondaryTitle">Exercises</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <div class="content">
+                        <h4>Solution, Part 1</h4>
+                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+                        <p>First, calculate the FVA of the quarterly option:</p>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="math" style="margin-left: 30px;"><br>
+                                    <b>The quarterly option:</b><br>
+                                    <span class="FV">FVA</span> = ?<br>
+                                    <span class="CF">CF</span> = 500<br>
+                                    <span class="int">i</span> = 0.06<br>
+                                    <span class="yrs">n</span> = 10<br>
+                                    <span class="cmpd">m</span> = 4<br>
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="text-center">
+                                    <img src="./images/tvm3_exercise4a_solution.png" class="img-fluid img-math" alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                    <button type="button" class="back btn hide">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-3">
+                    <div class="pageNumber">13</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- exercises4-slide12 : problem 6  -->
+        <div id="exercises4-slide12" class="slide exercises">
+            <div class="row slideTitle">
+                <div class="col-12 col-sm-12">
+                    <h2 class="primaryTitle">TVM: Annuities</h2>
+                    <h3 class="secondaryTitle">Exercises</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <div class="content">
+                        <!-- Exercises -->
+                        <h4>Identify the Variables</h4>
+                        <p>Enter the value of each variable in the boxes below. Leave the unknown variable blank.</p>
+                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="" class="indent">
+                                    <label><span class="FV">FVA</span> of the weekly option:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+        
+                                    <label><span class="FV">FVA</span> of the bi-weekly option:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+        
+                                    <label><b>Difference in values</b>:</label>
+                                    $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                </form>
+                                <button onclick="exercise_6()" type="button" class="btn calculateBtn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                    <button type="button" class="back btn hide">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-5">
+                    <div class="pageNumber">12 <span class="note">&nbsp;(Question 6)</span></div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!-- exercises4-slide13 :   answer problem 6 -->
+        <div id="exercises4-slide13" class="slide exercises">
+            <div class="row slideTitle">
+                <div class="col-12 col-sm-12">
+                    <h2 class="primaryTitle">TVM: Annuities</h2>
+                    <h3 class="secondaryTitle">Exercises</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <div class="content">
+                        <h4>Solution, Part 1</h4>
+                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+                        <p>First, calculate the FVA of the quarterly option:</p>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="math" style="margin-left: 30px;"><br>
+                                    <b>The quarterly option:</b><br>
+                                    <span class="FV">FVA</span> = ?<br>
+                                    <span class="CF">CF</span> = 500<br>
+                                    <span class="int">i</span> = 0.06<br>
+                                    <span class="yrs">n</span> = 10<br>
+                                    <span class="cmpd">m</span> = 4<br>
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="text-center">
+                                    <img src="./images/tvm3_exercise4a_solution.png" class="img-fluid img-math" alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
+                    <button type="button" class="back btn hide">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-3">
+                    <div class="pageNumber">13</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        
+
+
+
+        <!-- exercises4-slide16  -->
+        <div id="exercises4-slide16" class="slide">
             <div class="row slideTitle">
                 <div class="col-12 col-sm-12">
                     <h2 class="primaryTitle">TVM: Annuities</h2>
