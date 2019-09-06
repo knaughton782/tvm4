@@ -52,7 +52,7 @@
                         <div id="intro3" class="content">
                             <h3>Introduction</h3>
                             <p>In Part 1 of the Time Value of Money tutorial, you learned about the general format of the TVM equation. In Part 2, you learned about Compound Interest. In part 3, we added cash flows. Here in part 4 of the TVM tutorials, we'll learn about the Present Value of Annuities (PVA) to answer the question:<br>
-                                <span class="math">How much should I pay today for an annuity?</span>
+                                <span class="math"><b>How much should I pay today for an annuity?</b></span>
                             </p>
                         </div>
                         <div id="learningObj4" class="content">
@@ -983,7 +983,7 @@
                             </p>
                             <p class="question">What would you pay for a bond that pays $45 every six months and also pays its maturity value of $1000 at the end of the 10 years, if you require an 8% return on your investment?</p>
                             <div class="text-center">
-                                <img src="./images/tvm4_combo_example3_pva_timeline.png" class="img-fluid img-math" alt="">
+                                <img src="./images/tvm4_combo_example3.png" class="img-fluid img-math" alt="">
                             </div>
                             <p>This is really a combination problem because it makes regular payments like an annuity, but there is also a lump sum. We'll use two formulas to solve this problem.</p>
                             <p>1. The PVA equation for the PV of the semi-annual payments:
@@ -1328,13 +1328,13 @@
                                 <div class="">
                                     <form action="" class="indent">
 
-                                        <input id="pva-ex1" type="radio">
+                                        <input id="pva-ex1" type="radio" name="option" value="optA">
                                         <label>A) Annuity (PVA)</label><br>
 
-                                        <input id="pv-ex1" type="radio">
+                                        <input id="pv-ex1" type="radio" name="option" value="optB">
                                         <label>B) Lump Sum (PV)</label><br>
 
-                                        <input id="comb-ex1" type="radio">
+                                        <input id="combine-ex1" type="radio" name="option" value="optC">
                                         <label>C) Combination (PVA and PV)</label><br>
 
                                     </form>
@@ -1376,8 +1376,8 @@
                             <h4>Solution</h4>
                             <p>Is this question about an annuity, lump sum, or a combination of the two?</p>
                             <p class="question">What is the present value of an ordinary annuity that pays $100 semi-annually for 10 years at 4% interest?</p>
-                            <p class="answer">Answer: A) Annuity (PVA)</p>
-                            <p>This is an ordinary annuity without any lump sum payments, so we can use the PVA equation.
+                            <p class="answer">Answer:<br> A) Annuity (PVA)</p>
+                            <p class="answer">This is an ordinary annuity without any lump sum payments, so we can use the PVA equation.
                             </p>
                         </div>
                     </div>
@@ -1410,20 +1410,25 @@
                             <!-- Exercises -->
                             <h4>Identify the Variables</h4>
                             <p>Enter the value of each variable in the boxes below. Leave the box for the unknown variable blank.</p>
-                            <p class="question">What is the present value of an ordinary annuity that pays $100 semi-annually for 10 years at 4% interest?</p>
+                            <p class="question">What is the Present Value of an ordinary annuity that pays $100 semi-annually for 10 years at 4% interest?</p>
                             <div class="container">
                                 <div class="">
                                     <form action="" class="indent">
                                         <label><span class="pv">PVA</span> </label>
-                                        <input id="fv-ex2" type="number" placeholder="000"><br>
+                                        <input id="pva-ex2" type="number" placeholder="0"><br>
+
                                         <label><span class="cf">CF</span>&nbsp;&nbsp;&nbsp; </label>
                                         <input id="cf-ex2" type="number" placeholder="0"><br>
+
                                         <label>&nbsp;&nbsp;<span class="int">i </span>&nbsp;&nbsp;&nbsp;</label>
                                         <input id="int-ex2" type="number" placeholder=".00"><br>
+
                                         <label>&nbsp;&nbsp;<span class="yrs">n</span>&nbsp;&nbsp;&nbsp; </label>
                                         <input id="yrs-ex2" type="number" placeholder="0"><br>
+
                                         <label>&nbsp;<span class="cmpd">m</span>&nbsp;&nbsp;&nbsp; </label>
                                         <input id="cmpd-ex2" type="number" placeholder="0"><br>
+
                                     </form>
                                     <button onclick="exercise_2()" type="button" class="btn calculateBtn">Submit</button>
                                 </div>
@@ -1463,7 +1468,7 @@
                             <h4>Solution</h4>
                             <p class="question">What is the present value of an ordinary annuity that pays $100 semi-annually for 10 years at 4% interest?</p>
                             <br>
-                            <p>Variables:</p>
+                            <p>The variables are:</p>
                             <p class="math">
                                 <span class="pv">PVA</span> = ?<br>
                                 <span class="cf">CF</span> = 100<br>
@@ -1503,13 +1508,13 @@
                     <div class="col-12 col-sm-12">
                         <div class="content">
                             <!-- Exercises -->
-                            <h4>Calculate the Unknown Variables</h4>
+                            <h4>Calculate the Unknown Variable</h4>
                             <p class="question">What is the monthly payment for a 30-year mortgage on a house that costs $200,000 if you put down $10,000 and pay 5% interest?</p>
                             <div class="container">
                                 <div class="">
                                     <form action="" class="indent">
-                                        <label><span class="pv">PVA</span> equals $</label>
-                                        <input id="pv-ex3" type="number" placeholder="000"><br>
+                                        <label><span class="pv">PVA</span> </label>
+                                        $<input id="pva-ex3" type="number" placeholder="0.00"><br>
                                     </form>
                                     <button onclick="exercise_3()" type="button" class="btn calculateBtn">Submit</button>
                                 </div>
@@ -1601,13 +1606,13 @@
                                         <input id="pv-ex4" type="number" placeholder="0.00"><br>
 
                                         <label><span class="int">i</span>&nbsp;&nbsp; &nbsp;</label>
-                                        <input id="int-ex4" type="number" placeholder="0.00"><br>
+                                        <input id="int-ex4" type="number" placeholder=".00"><br>
 
                                         <label><span class="yrs">n</span>&nbsp;&nbsp; </label>
-                                        <input id="yrs-ex4" type="number" placeholder="0.00"><br>
+                                        <input id="yrs-ex4" type="number" placeholder="0"><br>
 
                                         <label><span class="cmpd">m</span>&nbsp; </label>
-                                        <input id="cmpd-ex4" type="number" placeholder="0.00"><br>
+                                        <input id="cmpd-ex4" type="number" placeholder="0"><br>
                                     </form>
                                     <button onclick="exercise_4()" type="button" class="btn calculateBtn">Submit</button>
                                 </div>
@@ -1686,13 +1691,13 @@
                     <div class="col-12 col-sm-12">
                         <div class="content">
                             <!-- Exercises -->
-                            <h4>Calculate the Unknown Variables</h4>
+                            <h4>Calculate the Unknown Variable</h4>
                             <p class="question">What is the present value of an annuity due that pays $100 semi-annually for 10 years at 4% interest, if you already know that the PVA of an ordinary annuity with the same variables equals $1635.14? Use the general format of the TVM equation.</p>
                             <div class="container">
                                 <div class="">
                                     <form action="" class="indent">
                                         <label><span class="pv">PVA</span> </label>
-                                        $<input id="pv-ex5" type="number" placeholder="0.00"><br>
+                                        $<input id="pva-ex5" type="number" placeholder="0.00"><br>
                                     </form>
                                     <button onclick="exercise_5()" type="button" class="btn calculateBtn">Submit</button>
                                 </div>
@@ -1784,13 +1789,13 @@
                                 <div class="">
                                     <form action="" class="indent">
 
-                                        <input id="pva-ex6" type="radio">
+                                        <input id="pva-ex6" type="radio" name="option" value="optA">
                                         <label>A) Annuity (PVA)</label><br>
 
-                                        <input id="pv-ex6" type="radio">
+                                        <input id="pv-ex6" type="radio" name="option" value="optB">
                                         <label>B) Lump Sum (PV)</label><br>
 
-                                        <input id="comb-ex6" type="radio">
+                                        <input id="combine-ex6" type="radio" name="option" value="optC">
                                         <label>C) Combination (PVA and PV)</label><br>
 
                                     </form>
@@ -1872,24 +1877,24 @@
                                 <div class="">
                                     <form action="" class="indent">
                                         <label><span class="pv">PVA</span> </label>
-                                        <input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                        <input id="pva-ex7" type="number" placeholder="0.00"><br>
 
-                                        <label><span class="cf">CF</span> </label>
-                                        <input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                        <label>&nbsp;<span class="cf">CF</span>&nbsp;&nbsp; </label>
+                                        <input id="cf-ex7" type="number" placeholder="0.00"><br>
 
-                                        <label><span class="int">i</span> </label>
-                                        <input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                        <label>&nbsp;&nbsp;<span class="int">i</span>&nbsp;&nbsp;&nbsp; </label>
+                                        <input id="int-ex7" type="number" placeholder=".00"><br>
 
-                                        <label><span class="yrs">n</span> </label>
-                                        <input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                        <label>&nbsp;&nbsp;<span class="yrs">n</span>&nbsp;&nbsp; </label>
+                                        <input id="yrs-ex7" type="number" placeholder="0"><br>
 
-                                        <label><span class="cmpd">m</span> </label>
-                                        <input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                        <label>&nbsp;&nbsp;<span class="cmpd">m</span>&nbsp; </label>
+                                        <input id="cmpd-ex7" type="number" placeholder="0"><br>
                                     </form>
-                                    <button onclick="exercise_6()" type="button" class="btn calculateBtn">Submit</button>
+                                    <button onclick="exercise_7()" type="button" class="btn calculateBtn">Submit</button>
                                 </div>
                                 <br>
-                                <div class="answer" id="answer-ex6"></div>
+                                <div class="answer" id="answer-ex7"></div>
                             </div>
                         </div>
                     </div>
@@ -1962,18 +1967,17 @@
                         <div class="content">
                             <!-- Exercises -->
                             <h4>Calculate the Unknown Variable</h4>
-                            <p>Enter the value of each variable in the boxes below. Leave the unknown variable blank.</p>
                             <p class="question">What is the Present Value of an annuity due that pays $25 quarterly for 20 years wtih an 8% rate of return?</p>
                             <div class="container">
                                 <div class="">
                                     <form action="" class="indent">
                                         <label><span class="pv">PVA</span> </label>
-                                        $<input id="pv-ex5" type="number" placeholder="0.00"><br>
+                                        $<input id="pva-ex8" type="number" placeholder="0.00"><br>
                                     </form>
-                                    <button onclick="exercise_6()" type="button" class="btn calculateBtn">Submit</button>
+                                    <button onclick="exercise_8()" type="button" class="btn calculateBtn">Submit</button>
                                 </div>
                                 <br>
-                                <div class="answer" id="answer-ex6"></div>
+                                <div class="answer" id="answer-ex8"></div>
                             </div>
                         </div>
                     </div>
@@ -2059,20 +2063,20 @@
                                 <div class="">
                                     <form action="" class="indent">
 
-                                        <input id="pva-ex1" type="radio">
+                                        <input id="pva-ex9" type="radio" name="option" value="optA">
                                         <label>A) Annuity (PVA)</label><br>
 
-                                        <input id="pv-ex1" type="radio">
+                                        <input id="pv-ex9" type="radio" name="option" value="optB">
                                         <label>B) Lump Sum (PV)</label><br>
 
-                                        <input id="comb-ex1" type="radio">
+                                        <input id="combine-ex9" type="radio" name="option" value="optC">
                                         <label>C) Combination (PVA and PV)</label><br>
 
                                     </form>
-                                    <button onclick="exercise_6()" type="button" class="btn calculateBtn">Submit</button>
+                                    <button onclick="exercise_9()" type="button" class="btn calculateBtn">Submit</button>
                                 </div>
                                 <br>
-                                <div class="answer" id="answer-ex6"></div>
+                                <div class="answer" id="answer-ex9"></div>
                             </div>
                         </div>
                     </div>
@@ -2127,6 +2131,7 @@
 
 
 
+
             <!-- exercises4-slide20 : problem 10  -->
             <div id="exercises4-slide20" class="slide exercises">
                 <div class="row slideTitle">
@@ -2146,24 +2151,24 @@
                                 <div class="">
                                     <form action="" class="indent">
                                         <label><span class="pv">PVA</span> </label>
-                                        <input id="pv-ex5" type="number" placeholder="0.00"><br>
+                                        <input id="pva-ex10" type="number" placeholder="0.00"><br>
 
-                                        <label><span class="cf">CF</span> </label>
-                                        <input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                        <label>&nbsp;<span class="cf">CF</span>&nbsp; </label>
+                                        <input id="cf-ex10" type="number" placeholder="0.00"><br>
 
-                                        <label><span class="int">i</span> </label>
-                                        <input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                        <label>&nbsp;&nbsp;<span class="int">i</span> &nbsp;</label>
+                                        <input id="int-ex10" type="number" placeholder=".00"><br>
 
-                                        <label><span class="yrs">n</span> </label>
-                                        <input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                        <label>&nbsp;&nbsp;<span class="yrs">n</span>&nbsp; </label>
+                                        <input id="yrs-ex10" type="number" placeholder="0"><br>
 
-                                        <label><span class="cmpd">m</span> </label>
-                                        <input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                        <label>&nbsp;<span class="cmpd">m</span>&nbsp; </label>
+                                        <input id="cmpd-ex10" type="number" placeholder="0"><br>
                                     </form>
-                                    <button onclick="exercise_6()" type="button" class="btn calculateBtn">Submit</button>
+                                    <button onclick="exercise_10()" type="button" class="btn calculateBtn">Submit</button>
                                 </div>
                                 <br>
-                                <div class="answer" id="answer-ex6"></div>
+                                <div class="answer" id="answer-ex10"></div>
                             </div>
                         </div>
                     </div>
@@ -2222,6 +2227,7 @@
 
 
 
+
             <!-- exercises4-slide22 : problem 11  -->
             <div id="exercises4-slide22" class="slide exercises">
                 <div class="row slideTitle">
@@ -2241,14 +2247,14 @@
                                 <div class="">
                                     <form action="" class="indent">
                                         <label><span class="cf">CF</span> </label>
-                                        $<input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                        $<input id="cf-ex11" type="number" placeholder="0.00"><br>
 
 
                                     </form>
-                                    <button onclick="exercise_6()" type="button" class="btn calculateBtn">Submit</button>
+                                    <button onclick="exercise_11()" type="button" class="btn calculateBtn">Submit</button>
                                 </div>
                                 <br>
-                                <div class="answer" id="answer-ex6"></div>
+                                <div class="answer" id="answer-ex11"></div>
                             </div>
                         </div>
                     </div>
@@ -2336,20 +2342,20 @@
                                 <div class="">
                                     <form action="" class="indent">
 
-                                        <input id="pva-ex1" type="radio">
+                                        <input id="pva-ex12" type="radio" name="option" value="optA">
                                         <label>A) Annuity (PVA)</label><br>
 
-                                        <input id="pv-ex1" type="radio">
+                                        <input id="pv-ex12" type="radio" name="option" value="optB">
                                         <label>B) Lump Sum (PV)</label><br>
 
-                                        <input id="comb-ex1" type="radio">
+                                        <input id="combine-ex12" type="radio" name="option" value="optC">
                                         <label>C) Combination (PVA and PV)</label><br>
 
                                     </form>
-                                    <button onclick="exercise_6()" type="button" class="btn calculateBtn">Submit</button>
+                                    <button onclick="exercise_12()" type="button" class="btn calculateBtn">Submit</button>
                                 </div>
                                 <br>
-                                <div class="answer" id="answer-ex6"></div>
+                                <div class="answer" id="answer-ex12"></div>
                             </div>
                         </div>
                     </div>
@@ -2425,24 +2431,24 @@
                                 <div class="">
                                     <form action="" class="indent">
                                         <label><span class="pv">PVA</span> </label>
-                                        <input id="pv-ex5" type="number" placeholder="0.00"><br>
+                                        <input id="pva-ex13" type="number" placeholder="0.00"><br>
 
-                                        <label><span class="cf">CF</span> </label>
-                                        <input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                        <label>&nbsp;<span class="cf">CF</span>&nbsp;&nbsp; </label>
+                                        <input id="cf-ex13" type="number" placeholder="0.00"><br>
 
-                                        <label><span class="int">i</span> </label>
-                                        <input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                        <label>&nbsp;&nbsp;&nbsp;<span class="int">i</span>&nbsp;&nbsp;&nbsp; </label>
+                                        <input id="int-ex13" type="number" placeholder="0.00"><br>
 
-                                        <label><span class="yrs">n</span> </label>
-                                        <input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                        <label>&nbsp;&nbsp;<span class="yrs">n</span>&nbsp;&nbsp; </label>
+                                        <input id="yrs-ex13" type="number" placeholder="0.00"><br>
 
-                                        <label><span class="cmpd">m</span> </label>
-                                        <input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                        <label>&nbsp;<span class="cmpd">m</span>&nbsp;&nbsp; </label>
+                                        <input id="cmpd-ex13" type="number" placeholder="0.00"><br>
                                     </form>
-                                    <button onclick="exercise_6()" type="button" class="btn calculateBtn">Submit</button>
+                                    <button onclick="exercise_13()" type="button" class="btn calculateBtn">Submit</button>
                                 </div>
                                 <br>
-                                <div class="answer" id="answer-ex6"></div>
+                                <div class="answer" id="answer-ex13"></div>
                             </div>
                         </div>
                     </div>
@@ -2530,14 +2536,14 @@
                                 <div class="">
                                     <form action="" class="indent">
                                         <label><span class="pv">PVA</span> </label>
-                                        $<input id="pv-ex5" type="number" placeholder="0.00"><br>
+                                        $<input id="pva-ex14" type="number" placeholder="0.00"><br>
 
 
                                     </form>
-                                    <button onclick="exercise_6()" type="button" class="btn calculateBtn">Submit</button>
+                                    <button onclick="exercise_14()" type="button" class="btn calculateBtn">Submit</button>
                                 </div>
                                 <br>
-                                <div class="answer" id="answer-ex6"></div>
+                                <div class="answer" id="answer-ex14"></div>
                             </div>
                         </div>
                     </div>
@@ -2625,24 +2631,24 @@
                                 <div class="">
                                     <form action="" class="indent">
                                         <label><span class="pv">PVA</span> </label>
-                                        <input id="pv-ex5" type="number" placeholder="0.00"><br>
+                                        <input id="pva-ex15" type="number" placeholder="0.00"><br>
 
-                                        <label><span class="cf">CF</span> </label>
-                                        <input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                        <label>&nbsp;<span class="fv">FV</span>&nbsp; </label>
+                                        <input id="fv-ex15" type="number" placeholder="0.00"><br>
 
-                                        <label><span class="int">i</span> </label>
-                                        <input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                        <label>&nbsp;&nbsp;<span class="int">i</span>&nbsp;&nbsp;&nbsp; </label>
+                                        <input id="int-ex15" type="number" placeholder=".00"><br>
 
-                                        <label><span class="yrs">n</span> </label>
-                                        <input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                        <label>&nbsp;<span class="yrs">n</span> &nbsp;&nbsp;</label>
+                                        <input id="yrs-ex15" type="number" placeholder="0"><br>
 
-                                        <label><span class="cmpd">m</span> </label>
-                                        <input id="fv-ex5" type="number" placeholder="0.00"><br>
+                                        <label>&nbsp;<span class="cmpd">m</span>&nbsp; </label>
+                                        <input id="cmpd-ex15" type="number" placeholder="0"><br>
                                     </form>
-                                    <button onclick="exercise_6()" type="button" class="btn calculateBtn">Submit</button>
+                                    <button onclick="exercise_15()" type="button" class="btn calculateBtn">Submit</button>
                                 </div>
                                 <br>
-                                <div class="answer" id="answer-ex6"></div>
+                                <div class="answer" id="answer-ex15"></div>
                             </div>
                         </div>
                     </div>
@@ -2704,6 +2710,7 @@
 
 
 
+
             <!-- exercises4-slide32 : problem 16  -->
             <div id="exercises4-slide32" class="slide exercises">
                 <div class="row slideTitle">
@@ -2717,19 +2724,19 @@
                         <div class="content">
                             <!-- Exercises -->
                             <h4>Calculate PV of the Lump Sum</h4>
-                            ld you pay for a bond that pays $100 at the end of each year and the $1000 face value at the end of 6 years, if you want to earn a 5% rate of return?</p>
+                            <p class="question">What would you pay for a bond that pays $100 at the end of each year and the $1000 face value at the end of 6 years, if you want to earn a 5% rate of return?</p>
                             <div class="container">
                                 <div class="">
                                     <form action="" class="indent">
                                         <label><span class="pv">PV</span> </label>
-                                        <input id="pv-ex5" type="number" placeholder="0.00"><br>
+                                        <input id="pv-ex16" type="number" placeholder="0.00"><br>
 
-                                    
+
                                     </form>
-                                    <button onclick="exercise_6()" type="button" class="btn calculateBtn">Submit</button>
+                                    <button onclick="exercise_16()" type="button" class="btn calculateBtn">Submit</button>
                                 </div>
                                 <br>
-                                <div class="answer" id="answer-ex6"></div>
+                                <div class="answer" id="answer-ex16"></div>
                             </div>
                         </div>
                     </div>
@@ -2761,7 +2768,7 @@
                     <div class="col-12 col-sm-12">
                         <div class="content">
                             <h4>Solution</h4>
-                            ld you pay for a bond that pays $100 at the end of each year and the $1000 face value at the end of 6 years, if you want to earn a 5% rate of return?</p>
+                            <p class="question">What would you pay for a bond that pays $100 at the end of each year and the $1000 face value at the end of 6 years, if you want to earn a 5% rate of return?</p>
 
                             <div class="row">
                                 <div class="col-12 col-sm-12 col-md-6">
@@ -2812,20 +2819,20 @@
                         <div class="content">
                             <!-- Exercises -->
                             <h4>Calculate the PV of the Bond</h4>
-                            
-                        ld you pay for a bond that pays $100 at the end of each year and the $1000 face value at the end of 6 years, if you want to earn a 5% rate of return?</p>
+
+                            <p class="question">What would you pay for a bond that pays $100 at the end of each year and the $1000 face value at the end of 6 years, if you want to earn a 5% rate of return?</p>
                             <div class="container">
                                 <div class="">
                                     <form action="" class="indent">
                                         <label><span class="pv">What would you pay?</span></label>
-                                        $<input id="pv-ex5" type="number" placeholder="0.00"><br>
+                                        $<input id="pv-ex17" type="number" placeholder="0.00"><br>
 
-                                        
+
                                     </form>
-                                    <button onclick="exercise_6()" type="button" class="btn calculateBtn">Submit</button>
+                                    <button onclick="exercise_17()" type="button" class="btn calculateBtn">Submit</button>
                                 </div>
                                 <br>
-                                <div class="answer" id="answer-ex6"></div>
+                                <div class="answer" id="answer-ex17"></div>
                             </div>
                         </div>
                     </div>
@@ -2857,21 +2864,21 @@
                     <div class="col-12 col-sm-12">
                         <div class="content">
                             <h4>Solution</h4>
-                        <p class="question">What would you pay for a bond that pays $100 at the end of each year and the $1000 face value at the end of 6 years, if you want to earn a 5% rate of return?</p>
-<p>In this combination problem, we calculated the PV of the annuity and the PV of the lump sum separately. To find the PV of the bond, we must add the two figures together.</p>
-                        <div class="math" style="margin-left: 20px;">
-                            <span class="pv">PVA</span> = 507.57<br>
-                            <span class="pv">PV</span> = 746.22<br>
-                        </div>
-                                <div class="col-12 col-sm-12 col-md-6">
-                                    <p class="text-center">
-                                        <img src="./images/tvm4_exercise5c_solution.png" class="img-fluid img-math" alt="">
-                                    </p>
-                                </div>
+                            <p class="question">What would you pay for a bond that pays $100 at the end of each year and the $1000 face value at the end of 6 years, if you want to earn a 5% rate of return?</p>
+                            <p>In this combination problem, we calculated the PV of the annuity and the PV of the lump sum separately. To find the PV of the bond, we must add the two figures together.</p>
+                            <div class="math" style="margin-left: 20px;">
+                                <span class="pv">PVA</span> = 507.57<br>
+                                <span class="pv">PV</span> = 746.22<br>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="text-center">
+                                    <img src="./images/tvm4_exercise5c_solution.png" class="img-fluid img-math" alt="">
+                                </p>
                             </div>
                         </div>
                     </div>
-                
+                </div>
+
                 <div class="row">
                     <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
                         <button type="button" class="back btn hide">Back</button>
@@ -2884,15 +2891,6 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
 
 
 
