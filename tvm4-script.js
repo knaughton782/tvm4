@@ -5,11 +5,11 @@ $(document).ready(function () {
 
   /** HIDE ALL SLIDES EXCEPT CURRENT, starts with first slide **/
 
-  // $('.allSlides .slide').each(function (e) {
-  //   if (e != 0) {
-  //     $(this).hide();
-  //   }
-  // });
+  $('.allSlides .slide').each(function (e) {
+    if (e != 0) {
+      $(this).hide();
+    }
+  });
 
   // for each click on the continue button, hide the current slide and show the next one
   $('.continue').click(function () {
@@ -269,14 +269,14 @@ function ex_8(pva) {
 function exercise_8() {
   var pva = parseFloat(document.getElementById('pva-ex8').value);
   pva.toFixed(2);
-  
+
   var ans = ex_8(pva);
 
   document.getElementById('answer-ex8').innerHTML = ans;
 }
 /* ******** end exercise 8 *********** */
 
-  
+
 
 /* ******** for exercise 9 *********** */
 function ex_9(choice) {
